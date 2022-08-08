@@ -206,11 +206,108 @@ $$f(x_0+\Delta x)\approx f(x_0)+f'(x_0)\Delta x$$
 
 #### 3.1.1 微分中值定理
 
+费马引理:
+
+$f(x)在x_0,U(x_0)有意义\\
+在x_0处可导,若f(x)\geq f(x_0)或f(x)\leq f(x_0)\qquad(所有x\in U(x_0))\\
+则f'(x_0)=0$
+
+$f(x)在[a,b]连续,开区间可导,在x_0处取极值,则f'(x_0)=0$
+
+驻点: 导数为0的点
+
+罗尔定理:
+
+若f(x)满足:
+
+1. 在[a,b]连续
+2. 在(a,b)可导
+3. f(a)=f(b)
+
+$则至少存在\xi\in(a,b),使f'(\xi)=0$
+
+拉格朗日中值定理:
+
+若f(x)满足:
+
+1. [a,b]连续
+2. (a,b)可导
+
+$则至少存在\xi\in(a,b),使f(b)-f(a)=f'(\xi)(b-a)$
+
+定理:
+
+$f(x)在区间I连续,I内可导且导数恒为0,则f(x)=c$
+
 #### 3.1.2 柯西中值定理
+
+柯西中值定理:
+
+若f(x)和F(x)满足:
+
+1. [a,b]连续
+2. (a,b)可导
+3. 所有x$\in$(a,b),F'(x)$\neq$ 0
+
+$至少有一点\xi,使\frac{f(b)-f(a)}{F(b)-F(a)}=\frac{f'(\xi)}{F'(\xi)}$
+
+(可以用柯西中值定理证明拉格朗日中值定理,反之不行)
 
 #### 3.1.3 泰勒定理
 
+正常近似: ($x-x_0$)是一次函数,不精确
+
+$$f(x)-f(x_0)\approx f(x_0)(x-x_0)\\
+f(x)\approx f(x_0)+f'(x_0)(x-x_0)$$
+
+问题:
+
+1. 什么条件下用n次多项式代表f(x)
+2. 多项式是什么
+3. 误差多大
+
+泰勒定理:
+
+$f(x)在含有x_0的某个开区间(a,b)上具有(n+1)阶导数,那么在开区间(a,b)上f(x)可以表示成x-x_0的n次多项式+余项R_n(x)$
+
+带拉格朗日余项的泰勒公式:
+
+$$f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{(n)}(x)}{n!}(x-x_0)^n+R_n(x)\\
+R_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}\qquad\xi在x及x_0之间$$
+
+$R_n(x)\cdots拉格朗日型余项(一般忽略)$
+
+带拉格朗日余项的马克劳林公式:
+
+泰勒公式中的$x_0$取0
+
+$$f(x)=f(0)+f(0)x+\frac{f''(0)}{2!}x^2+\cdots+\frac{f^{(n)}(0)}{n!}x^n+R_n(x)\\
+R_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}$$
+
+eg.1
+
+> $$e^x\approx1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}\\
+> sinx\approx x-\frac{1}{3!}x^3+\frac{1}{5!}x^5+\cdots$$
+
 ### 3.2 洛必达法则
+
+洛必达法则:
+
+若f(x),g(x)满足:
+
+1. $\lim\limits_{x\rightarrow x_0}f(x)=\lim\limits_{x\rightarrow x_0}g(x)=0$
+2. 在$x_0$的某个x邻域内($x_0$可除外)可导,$g'(x)\neq0$
+3. $\lim\limits_{x\rightarrow x_0}\frac{f'(x)}{g'(x)}=a(或\infty)$
+
+$则\lim\limits_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\lim\limits_{x\rightarrow x_0}\frac{f'(x)}{g'(x)}=a(或\infty)$
+
+注:$\frac{\infty}{\infty}型可以进行转化:$
+
+eg.1
+
+> $$\lim\limits_{x\rightarrow+\infty}\frac{x^4}{e^x}=\lim\limits_{x\rightarrow+\infty}\frac{\frac{1}{e^x}}{\frac{1}{x^4}}\rightarrow\frac{0}{0}$$
+
+$注:0\times\infty,\:0^0,\:1^\infty,\:\infty^0可通过e^{\ln()}来转化$
 
 ### 3.3 函数单调性与凹凸性
 
