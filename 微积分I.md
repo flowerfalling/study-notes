@@ -41,7 +41,7 @@ $A\times B=\{(a, b)|a\in A, b\in B\}\quad(有序对(a,b))$
 定义:
 
 $\{x_n\}若存在a,任给\epsilon>0,存在N,n>N时,|x_n-a|<\epsilon,\{x_n\}以a为极限(\{x_n\}收敛与a)\\
-记作:\lim\limits_{n\rightarrow+\infty}x_n=a\\$
+记作:\lim\limits_{n\rightarrow\infty}x_n=a\\$
 
 性质1:
 
@@ -53,7 +53,7 @@ $\{x_n\}$收敛,数列有界
 
 性质3:
 
-$\lim\limits_{n\rightarrow+\infty}x_n=a\quad a>0(a<0)\quad存在N\quad 使n>N时\quad x_n>0(x_n<0)$
+$\lim\limits_{n\rightarrow\infty}x_n=a\quad a>0(a<0)\quad存在N\quad 使n>N时\quad x_n>0(x_n<0)$
 
 性质4:
 
@@ -305,7 +305,7 @@ $则\lim\limits_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\lim\limits_{x\rightarrow x_
 
 eg.1
 
-> $$\lim\limits_{x\rightarrow+\infty}\frac{x^4}{e^x}=\lim\limits_{x\rightarrow+\infty}\frac{\frac{1}{e^x}}{\frac{1}{x^4}}\rightarrow\frac{0}{0}$$
+> $$\lim\limits_{x\rightarrow\infty}\frac{x^4}{e^x}=\lim\limits_{x\rightarrow\infty}\frac{\frac{1}{e^x}}{\frac{1}{x^4}}\rightarrow\frac{0}{0}$$
 
 $注:0\times\infty,\:0^0,\:1^\infty,\:\infty^0可通过e^{\ln()}来转化$
 
@@ -662,7 +662,7 @@ $$\int_a^bu\,\mathrm{d}v=uv|_a^b-\int_a^bv\,\mathrm{d}u$$
 
 #### 5.5.1 无穷限积分
 
-$$\int_a^{+\infty}f(x)\,\mathrm{d}x=\lim\limits_{b\rightarrow+\infty}\int_a^bf(x)\,\mathrm{d}x\\
+$$\int_a^{+\infty}f(x)\,\mathrm{d}x=\lim\limits_{b\rightarrow\infty}\int_a^bf(x)\,\mathrm{d}x\\
 \int_{-\infty}^bf(x)\,\mathrm{d}x=\lim\limits_{a\rightarrow-\infty}\int_a^bf(x)\,\mathrm{d}x\\
 \int_{-\infty}^{+\infty}f(x)\,\mathrm{d}x=\int_{-\infty}^cf(x)\,\mathrm{d}x+\int_c^{+\infty}f(x)\,\mathrm{d}x=\cdots$$
 
@@ -842,7 +842,7 @@ $部分和:S_n=u_1+u_2+\cdots+u_n$
 
 $S_1=u_1\quad S_2=u_1+u_2\quad S_3=u_1+u_2+u_3$
 
-$\lim\limits_{n\rightarrow+\infty}S_n=S$
+$\lim\limits_{n\rightarrow\infty}S_n=S$
 
 $余项R_n=S-S_n=u_{n+1}+\cdots$
 
@@ -856,9 +856,9 @@ $S=a+aq+aq^2+aq^3+\cdots(a\neq0)$
 
 $S_n=a+aq+\cdots+aq^{n-1}=\frac{a(1-q^n)}{1-q}$
 
-当$n\rightarrow+\infty$时
+当$n\rightarrow\infty$时
 
-- $|q|<1,收敛\quad\lim\limits_{n\rightarrow+\infty}S_n=\frac{a}{1-q}$
+- $|q|<1,收敛\quad\lim\limits_{n\rightarrow\infty}S_n=\frac{a}{1-q}$
 - $|q|>1,发散$
 - $|q|=1$
   - $q=1\quad S_n=a+a+a+\cdots\qquad发散$
@@ -928,7 +928,7 @@ p>1\cdots收敛$
 比较判别法推论:
 
 $正项级数\sum u_n\quad\sum v_n\\
-\lim\limits_{n\rightarrow+\infty}\frac{u_n}{v_n}=l$
+\lim\limits_{n\rightarrow\infty}\frac{u_n}{v_n}=l$
 
 - $0<l<+\infty\cdots\sum u_n\ \sum v_n有相同敛散性$
 - $l=0\cdots\sum u_n\ \sum v_n都收敛$
@@ -937,7 +937,7 @@ $正项级数\sum u_n\quad\sum v_n\\
 比值判别法:
 
 $正项级数\sum u_n\\
-\lim\limits_{n\rightarrow+\infty}\frac{u_{n+1}}{u_n}=l$
+\lim\limits_{n\rightarrow\infty}\frac{u_{n+1}}{u_n}=l$
 
 - $l<1\cdots收敛$
 - $l>1\cdots发散$
@@ -946,7 +946,7 @@ $正项级数\sum u_n\\
 根值判别法(柯西判别法):
 
 $正项级数\sum u_n\\
-\lim\limits_{n\rightarrow+\infty}\sqrt[n]{u_n}=\rho$
+\lim\limits_{n\rightarrow\infty}\sqrt[n]{u_n}=\rho$
 
 - $\rho<1\cdots收敛$
 - $\rho>1\cdots发散$
@@ -954,7 +954,7 @@ $正项级数\sum u_n\\
 
 判断正项级数$u_n$:
 
-$\lim\limits_{n\rightarrow+\infty}u_n$
+$\lim\limits_{n\rightarrow\infty}u_n$
 
 - $\neq0\cdots发散$
 - $=0$
@@ -979,7 +979,7 @@ $\sum(-1)^nu_n\qquad(n:1\rightarrow\infty)$
 交错级数,满足:
 
 1. $u_n\geq u_n+1$
-2. $\lim\limits_{n\rightarrow+\infty}u_n=0$
+2. $\lim\limits_{n\rightarrow\infty}u_n=0$
 
 则交错级数收敛
 
@@ -1007,7 +1007,7 @@ $\sum|u_n|收敛\cdots\sum|u_n|绝对收敛\\
 
 定理3:
 
-$对任意项级数:u_1+u_2+\cdots+u_n+\cdots\qquad\lim\limits_{n\rightarrow+\infty}|\frac{u_{n+1}}{u_n}|=l$
+$对任意项级数:u_1+u_2+\cdots+u_n+\cdots\qquad\lim\limits_{n\rightarrow\infty}|\frac{u_{n+1}}{u_n}|=l$
 
 - $l<1\cdots\sum u_n绝对收敛$
 - $l>1\cdots\sum u_n发散$
@@ -1030,6 +1030,61 @@ $\sum u_n绝对收敛\Rightarrow任意交换顺序,\sum u_n还是收敛且和不
 $\sum u_n\quad\sum v都绝对收敛\Rightarrow\sum u_iv_i也绝对收敛$
 
 ### 7.4 幂级数
+
+$S(x)=a_0+a_1x+a_2x^2+\cdots+a_nx^n+\cdots$
+
+$S(x)=u_0(x)+u_2(x)+\cdots+u_n(x)+\cdots$
+
+$x=x_0\qquad\sum u_n(x_0)有极限\rightarrow收敛,否则发散$
+
+$x\in D\qquad\sum u_n(x)收敛\rightarrow D:收敛域$
+
+$S(x)=\lim\limits_{n\rightarrow\infty}S_n(x)$
+
+$R_n(x)=S(x)-S_n(x)\\若级数收敛,则余项\rightarrow0$
+
+判断幂级数是否收敛:
+
+$$\lim\limits_{n\rightarrow\infty}|\frac{u_{n+1}}{u_n}|=\lim\limits_{n\rightarrow\infty}|\frac{a_{n+1}x^{n+1}}{a_nx^n}|=|x|\lim\limits_{n\rightarrow\infty}|\frac{a_{n+1}}{a_n}|=l|x|$$
+
+- $l|x|<1或|x|<\frac{1}{l}\cdots绝对收敛$
+- $l|x|>1或|x|>\frac{1}{l}\cdots发散$
+- $l|x|=1或x\pm\frac{1}{l}\cdots无法判断$
+- $l=0\cdots收敛$
+- $l=\infty\cdots只有当x=0时,级数收敛$
+
+定理:
+
+$如果幂级数:a_0+a_1x+a_2x^2+\cdots+a_nx^n+\cdots$
+
+$\lim\limits_{n\rightarrow\infty}|\frac{a_{n+1}}{a_n}|=l$
+
+- $0<l<\infty\cdots收敛半径R=\frac{1}{l}(|x|=\frac{1}{l}时,端点单独讨论)$
+- $l=0\cdots R=\infty$
+- $l=\infty\cdots R=0$
+
+性质1:
+
+$\sum a_nx^n\quad\sum b_nx^n\quad收敛半径为R_1,R_2\quad和函数分别为S_1(x),S_2(x)$
+
+$\sum(a_n\pm b_n)x^n=S_1(x)\pm S_2(x)\qquad收敛域|x|<\min\{R_1,R_2\}$
+
+性质2:
+
+$如果收敛半径R>0,那么在区域-R到R内级数的和函数是连续的,并且在R或-R的两端点也收敛的话,那么在这两个端点上,级数是左连续或者右连续的$
+
+性质3:
+
+$S_n(x)=\sum\limits_{n=1}^\infty a_nx^n$
+
+$S_n'(x)=\sum\limits_{n=1}^\infty (a_nx^n)'=\sum a_nnx^{n-1}\qquad收敛半径相同$
+
+性质4:
+
+$S_n(x)=\sum\limits_{n=1}^\infty a_nx^n$
+
+$\int_0^xS_n(x)\mathrm{d}x=\sum\limits_{n=1}^\infty\int_0^xa_nx^n\mathrm{d}x=\sum\limits_{n=1}^\infty a_n\frac{x^{n+1}}{n+1}\qquad收敛半径相同\\
+端点处是否收敛需重新判断$
 
 ## 第八章
 
