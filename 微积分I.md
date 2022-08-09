@@ -754,7 +754,83 @@ $$\Gamma(r+1)=r\Gamma(r)\\
 
 ### 6.7 二重积分的定义和性质
 
+概念:体积(曲顶柱体)
+
+$$d_i为小区域面积\qquad d=\max\{d_i\}\\
+\lim\limits_{d\rightarrow0}\sum\limits_{i=1}^nf(x_i,y_i)\Delta\delta i=\iint\limits_D f(x,y)\,d\sigma=\iint\limits_D f(x,y)\,dxdy$$
+
+$D\cdots定义域$
+
+性质1:
+
+$\iint\limits_D kf(x,y)\,d\sigma=k\iint\limits_D f(x,y)\,d\sigma$
+
+性质2:
+
+$\iint\limits_D [f(x,y)\pm g(x,y)]\,d\sigma=\iint\limits_D f(x,y)\,d\sigma\pm\iint\limits_D g(x,y)\,d\sigma$
+
+性质3:
+
+$D=D_1+D_2$
+
+$\iint\limits_D f(x,y)\,d\sigma=\iint\limits_{D_1} f(x,y)\,d\sigma+\iint\limits_{D_2} f(x,y)\,d\sigma$
+
+性质4:
+
+$f(x,y)\leq g(x,y)\Rightarrow\iint\limits_D f(x,y)\,d\sigma\leq\iint\limits_D g(x,y)\,d\sigma$
+
+推论:
+
+$|\iint\limits_D f(x,y)\,d\sigma|\leq\iint\limits_D |f(x,y)|\,d\sigma$
+
+性质5:
+
+$f(x,y)\equiv1$
+
+$\iint\limits_D 1\,d\sigma=\sigma$
+
+性质6:
+
+$m,M为f(x,y)在D内的最小值和最大值$
+
+性质7:
+
+二元函数中值定理
+
+$在D内一定可以找到一点,使得f(\xi,n)\sigma=\iint\limits_Df(x,y)\,d\sigma$
+
+$m\sigma\leq\iint\limits_D f(x,y)\,d\sigma\leq M\sigma$
+
 ### 6.8 二重积分的计算(直角/极坐标系)
+
+#### 直角坐标系
+
+$$X型:\iint\limits_Df(x,y)\,dxdy=\int_a^b\,dx\int_{\phi_1(x)}^{\phi_2(x)}f(x,y)\,dy\\
+Y型:\iint\limits_Df(x,y)\,dxdy=\int_c^d\,dy\int_{\phi_1(y)}^{\phi_2(y)}f(x,y)\,dx$$
+
+eg.1
+
+求顶点为(0,0,0),(0,1,0),(1,1,0),(1,1,1)的四面体的体积
+
+> $$\iint\limits_Dxy\,dxdy\\
+> X型:\:=\int_0^1dx\int_x^1xy\,dy\\
+> =\int_0^1\frac{1}{2}xy^2|_x^1\,dx\\
+> =\int_0^1\frac{1}{2}x-\frac{1}{2}x^3\,dx=\frac{1}{8}\\
+> Y型:\:=\int_0^1dy\int_0^yxy\,dx$$
+
+特殊1:
+
+$D为矩形,x\in[a,b],y\in[c,d]$
+
+$$\int_a^bdx\int_c^df(x,y)\,dy=\int_c^ddy\int_a^bf(x,y)\,dx$$
+
+特殊2:
+
+$D为矩形,x\in[a,b],y\in[c,d],f(x,y)=f_1(x)f_2(y)$
+
+$$\int_a^bdx\int_c^df(x,y)\,dy=\int_a^bf_1(x)\,dx\int_c^df_2(y)\,dy$$
+
+#### 极坐标系
 
 ## 第七章
 
