@@ -99,29 +99,29 @@ $(c)'=0$
 
 $(x^a)'=ax^{a-1}$
 
-$(sinx)'=cosx$
+$(sin\,x)'=cos\,x$
 
-$(cosx)'=-sinx$
+$(cos\,x)'=-sin\,x$
 
-$(tanx)'=sec^2x$
+$(tan\,x)'=sec^2\,x$
 
-$(cotx)'=-csc^2x$
+$(cot\,x)'=-csc^2\,x$
 
-$(secx)'=secx\,tanx$
+$(sec\,x)'=sec\,x\:tan\,x$
 
-$(cscsx)'=-cscx\,cotx$
+$(cscs\,x)'=-csc\,x\:cot\,x$
 
-$(arcsinx)'=\frac{1}{\sqrt{1-x^2}}$
+$(arcsin\,x)'=\frac{1}{\sqrt{1-x^2}}$
 
-$(arccosx)'=-\frac{1}{\sqrt{1-x^2}}$
+$(arccos\,x)'=-\frac{1}{\sqrt{1-x^2}}$
 
-$(arctanx)'=\frac{1}{1+x^2}$
+$(arctan\,x)'=\frac{1}{1+x^2}$
 
-$(arccotx)'=-\frac{1}{1+x^2}$
+$(arccot\,x)'=-\frac{1}{1+x^2}$
 
-$(a^x)'=a^x\,lna\qquad (e^x)'=e^x$
+$(a^x)'=a^x\,\ln a\cdots (e^x)'=e^x$
 
-$(log_ax)'=\frac{a}{x\,lna}\qquad (lnx)'=\frac{1}{x}$
+$(\log_ax)'=\frac{a}{x\,\ln a}\qquad (\ln x)'=\frac{1}{x}$
 
 ---
 
@@ -168,7 +168,7 @@ y'=-\frac{x}{y}$$
 
 $$(u\pm v)^{(n)}=u^{(n)}\pm v^{(n)}\\
 (cu)^{(n)}=cu^{(n)}\\
-(uv)^{(n)}=\sum\limits_{i=0}^nC_n^iu^{(n-i)}v^{(i)}$$
+(uv)^{(n)}=\sum\limits_{i=0}^n\complement_n^iu^{(n-i)}v^{(i)}$$
 
 注:
 
@@ -182,7 +182,7 @@ $$\Delta x\rightarrow\Delta y=y(x_0+\Delta x)-y(x_0)$$
 
 改变量(精确值):$\Delta y=A\Delta x+0(\Delta x)$
 
-微分值(近似值):$dy=f'(x)dx,$其中$dx=\Delta x$
+微分值(近似值):$\mathrm{d}y=f'(x)\mathrm{d}x,$其中$\mathrm{d}x=\Delta x$
 
 $\Rightarrow$可微
 
@@ -190,11 +190,11 @@ f(x)在$x_0$除可微$\Leftarrow\Rightarrow$可导
 
 微分的基本公式:
 
-$$d(u\pm v)=u'dx+v'dx=du+dv\\
-d(uv)=vdu+udv\\
-d(cu)=cdu\\
-d(\frac{u}{v})=\frac{vdu-udv}{v^2}\\
-d(u(v(x)))=u'(v(x))v'(x)dx$$
+$$\mathrm{d}(u\pm v)=u'\mathrm{d}x+v'\mathrm{d}x=\mathrm{d}u+\mathrm{d}v\\
+\mathrm{d}(uv)=v\mathrm{d}u+u\mathrm{d}v\\
+\mathrm{d}(cu)=c\mathrm{d}u\\
+\mathrm{d}(\frac{u}{v})=\frac{v\mathrm{d}u-u\mathrm{d}v}{v^2}\\
+\mathrm{d}(u(v(x)))=u'(v(x))v'(x)\mathrm{d}x$$
 
 近似计算:
 
@@ -321,91 +321,91 @@ $注:0\times\infty,\:0^0,\:1^\infty,\:\infty^0可通过e^{\ln()}来转化$
 
 不定积分: 微分的逆运算或求导的逆运算
 
-$$\int f(x)\,dx=F(x)+c$$
+$$\int f(x)\,\mathrm{d}x=F(x)+c$$
 
 注: 一定要加常数c
 
 性质1:
 
-$[\int f(x)\,dx]'=f(x)$
+$[\int f(x)\,\mathrm{d}x]'=f(x)$
 
-$\int f'(x)\,dx=f(x)+c\\
-\int f''(x)\,dx=f'(x)+c$
+$\int f'(x)\,\mathrm{d}x=f(x)+c\\
+\int f''(x)\,\mathrm{d}x=f'(x)+c$
 
 性质2:
 
-$\int kf(x)\,dx=k\int f(x)\,dx$
+$\int kf(x)\,\mathrm{d}x=k\int f(x)\,\mathrm{d}x$
 
 1. k是常数
 2. k是与x无关的另外的变量
 
 性质3:
 
-$\int[\underbrace{f_1(x)+f_2(x)+\cdots+f_n(x)}_{有限个}]\,dx=\int f_1(x)\,dx+\cdots+\int f_n(x)\,dx$
+$\int[\underbrace{f_1(x)+f_2(x)+\cdots+f_n(x)}_{有限个}]\,\mathrm{d}x=\int f_1(x)\,\mathrm{d}x+\cdots+\int f_n(x)\,\mathrm{d}x$
 
 ### 4.2 积分法
 
 #### 4.2.1 第一换元积分法
 
-$$\int g(x)\,dx=\int f(\phi(x))\,\phi'(x)\,dx=\int f(\phi(x))\,d\phi(x)\\
-=\int f(u)\,du=F(u)+c=F(\phi(x))+c$$
+$$\int g(x)\,\mathrm{d}x=\int f(\phi(x))\,\phi'(x)\,\mathrm{d}x=\int f(\phi(x))\,\mathrm{d}\phi(x)\\
+=\int f(u)\,\mathrm{d}u=F(u)+c=F(\phi(x))+c$$
 
 eg.1
 
-> $$\quad\int 2x\,cosx^2\,dx\\
-> =\int cosx^2\,dx^2\\
+> $$\quad\int 2x\,cosx^2\,\mathrm{d}x\\
+> =\int cosx^2\,\mathrm{d}x^2\\
 > =sinx^2+c$$
 
 <a id="4.2.1.eg.2"></a>
 
 eg.2
 
-> $$\int\frac{1+x^2}{1+x^4}\,dx\\
-> =\int\frac{\frac{1}{x^2}+1}{\frac{1}{x^2}+x^2}\,dx\\
-> =\int\frac{1}{(x-\frac{1}{x})^2+2}\,d(x-\frac{1}{x})\\
-> =\int\frac{1}{\sqrt{2}^2}\frac{1}{(\frac{x-\frac{1}{x}}{\sqrt{2}})^2+1}\,d(x-\frac{1}{x})\\
-> =\frac{1}{\sqrt{2}}\int\frac{1}{(\frac{x-\frac{1}{x}}{\sqrt{2}})^2+1}\,d(\frac{x-\frac{1}{x}}{\sqrt{2}})\\
+> $$\int\frac{1+x^2}{1+x^4}\,\mathrm{d}x\\
+> =\int\frac{\frac{1}{x^2}+1}{\frac{1}{x^2}+x^2}\,\mathrm{d}x\\
+> =\int\frac{1}{(x-\frac{1}{x})^2+2}\,\mathrm{d}(x-\frac{1}{x})\\
+> =\int\frac{1}{\sqrt{2}^2}\frac{1}{(\frac{x-\frac{1}{x}}{\sqrt{2}})^2+1}\,\mathrm{d}(x-\frac{1}{x})\\
+> =\frac{1}{\sqrt{2}}\int\frac{1}{(\frac{x-\frac{1}{x}}{\sqrt{2}})^2+1}\,\mathrm{d}(\frac{x-\frac{1}{x}}{\sqrt{2}})\\
 > =\frac{arctan(\frac{x-\frac{1}{x}}{\sqrt{2}})}{\sqrt{2}}+c$$
 
 #### 4.2.2 第二换元积分法
 
 $$x=\phi(t)\\
-\int f(x)\,dx=\int f(\phi(t))\,\phi'(t)\,dt$$
+\int f(x)\,\mathrm{d}x=\int f(\phi(t))\,\phi'(t)\,\mathrm{d}t$$
 (多用于消根号)
 
 eg.1
 
-> $$a=\int\frac{dx}{\sqrt{2x-3}}\\
+> $$a=\int\frac{\mathrm{d}x}{\sqrt{2x-3}}\\
 > 令t=\sqrt{2x-3},\:x=\frac{1}{2}t^2+\frac{3}{2}\\
-> dx=t\,dt\\
-> a=\int\frac{t\,dt}{(\frac{1}{2}t^2+\frac{3}{2})t}\\
-> =2\int\frac{dt}{t^2+3}\\
+> \mathrm{d}x=t\,\mathrm{d}t\\
+> a=\int\frac{t\,\mathrm{d}t}{(\frac{1}{2}t^2+\frac{3}{2})t}\\
+> =2\int\frac{\mathrm{d}t}{t^2+3}\\
 > =\frac{2}{3}\sqrt{3}arctan\frac{t}{\sqrt{3}}+c\\
 > =\frac{2}{3}\sqrt{3}arctan\frac{\sqrt{6x-9}}{3}+c$$
 
 #### 4.2.3 分部积分法
 
-$$\int u\,dv=uv-\int v\,du$$
+$$\int u\,\mathrm{d}v=uv-\int v\,\mathrm{d}u$$
 
 推导:
 
 $$(uv)'=u'v+uv'\\
 uv'=(uv)'-u'v\\
-\int uv'\,dx=\int(uv)'\,dx-\int u'v\,dx\\
-\int u\,dv=uv-\int v\,du$$
+\int uv'\,\mathrm{d}x=\int(uv)'\,\mathrm{d}x-\int u'v\,\mathrm{d}x\\
+\int u\,\mathrm{d}v=uv-\int v\,\mathrm{d}u$$
 
 (1)谁放d后面
 
-> $$\int x\,sinx\,dx=-\int x\,dcosx\\
-> =-(x\,cosx-\int cosx\,dx)=-x\,cosx+sinx+c$$
+> $$\int x\,sinx\,\mathrm{d}x=-\int x\,\mathrm{d}cosx\\
+> =-(x\,cosx-\int cosx\,\mathrm{d}x)=-x\,cosx+sinx+c$$
 
 (2)能积出来,能让积分更简单
 
-> $$\int xe^x\,dx=\int x\,de^x=xe^x-\int e^x\,dx=xe^x-e^x+c$$
+> $$\int xe^x\,\mathrm{d}x=\int x\,\mathrm{d}e^x=xe^x-\int e^x\,\mathrm{d}x=xe^x-e^x+c$$
 
 (3)优先:
 
-$$e^x>sinx,\:cosx>x,\:x^n>lnx,\:arctanx$$
+$$e^x>sinx,\:cosx>x,\:x^n>\ln x,\:arctanx$$
 
 ### 4.3 有理函数的积分
 
@@ -415,7 +415,7 @@ $$e^x>sinx,\:cosx>x,\:x^n>lnx,\:arctanx$$
 
 eg.1(分子0次,分母2次)
 
-> $$e=\int\frac{1}{ax^2+bx+c}\,dx$$
+> $$e=\int\frac{1}{ax^2+bx+c}\,\mathrm{d}x$$
 >
 > ---
 >
@@ -423,7 +423,7 @@ eg.1(分子0次,分母2次)
 >
 > $\quad a(x-x_1)^2=0$
 >
-> $$e=\int\frac{1}{a(x-x_1)^2}\,d(x-x_1)=-\frac{1}{a}\frac{1}{x-x_1}+c$$
+> $$e=\int\frac{1}{a(x-x_1)^2}\,\mathrm{d}(x-x_1)=-\frac{1}{a}\frac{1}{x-x_1}+c$$
 >
 > ---
 >
@@ -433,8 +433,8 @@ eg.1(分子0次,分母2次)
 >
 > $\quad a(x-x_1)(x-x_2)=0$
 >
-> $$e=\int\frac{1}{a(x-x_1)(x-x_2)}\,dx\\
-> =\frac{1}{a}\int(\frac{A}{x-x_1}+\frac{B}{x-x_2})\,dx$$
+> $$e=\int\frac{1}{a(x-x_1)(x-x_2)}\,\mathrm{d}x\\
+> =\frac{1}{a}\int(\frac{A}{x-x_1}+\frac{B}{x-x_2})\,\mathrm{d}x$$
 >
 > $\quad -x_2A-x_1B=1$
 >
@@ -446,8 +446,8 @@ eg.1(分子0次,分母2次)
 >
 > $\quad B=\frac{1}{x_2-x_1}$
 >
-> $$e=\frac{1}{a}\Bigg(\frac{1}{x_1-x_2}\int\frac{1}{x-x_1}\,d(x-x_1)+\frac{1}{x_2-x_1} \int\frac{1}{x-x_2}\,d(x-x_2)\Bigg)\\
-> =\frac{1}{a}\Bigg(\frac{1}{x_1-x_2}ln|x-x_1|+\frac{1}{x_2-x_1}ln|x-x_2|\Bigg)$$
+> $$e=\frac{1}{a}\Bigg(\frac{1}{x_1-x_2}\int\frac{1}{x-x_1}\,\mathrm{d}(x-x_1)+\frac{1}{x_2-x_1} \int\frac{1}{x-x_2}\,\mathrm{d}(x-x_2)\Bigg)\\
+> =\frac{1}{a}\Bigg(\frac{1}{x_1-x_2}\ln|x-x_1|+\frac{1}{x_2-x_1}\ln|x-x_2|\Bigg)$$
 >
 > ---
 >
@@ -457,29 +457,29 @@ eg.1(分子0次,分母2次)
 >
 > $\quad a\Big((x+x_1)^2+n\Big)=0$
 >
-> $$e=\frac{1}{a}\int\frac{1}{(x+x_1)^2+n}\,d(x+x_1)$$
+> $$e=\frac{1}{a}\int\frac{1}{(x+x_1)^2+n}\,\mathrm{d}(x+x_1)$$
 > 接着...如[4.2.1.eg.2](#4.2.1.eg.2)
 
 eg.2(分子1次,分母2次)
 
-> $$e=\int\frac{mx+n}{ax^2+bx+c}\,dx\\
-> =\frac{m}{a}\int\frac{x+\frac{n}{m}}{x^2+\frac{b}{a}x+\frac{c}{a}}\,dx$$
->
-> $b^2-4ac=0$
+> $$e=\int\frac{mx+n}{ax^2+bx+c}\,\mathrm{d}x\\
+> =\frac{m}{a}\int\frac{x+\frac{n}{m}}{x^2+\frac{b}{a}x+\frac{c}{a}}\,\mathrm{d}x$$
 >
 > ---
 >
-> $$e=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)^2}\,dx\\
-> =\frac{m}{a}\int\frac{x-x_1+\frac{n}{m}+x_1}{(x-x_1)^2}\,dx\\
-> =\frac{m}{a}\Bigg(\int\frac{1}{x-x_1}\,d(x-x_1)+\int\frac{\frac{n}{m}+x_1}{(x-x_1)^2}\,d(x-x_1)\Bigg)\\
-> =\frac{m}{a}ln|x-x_1|-\frac{n+mx_1}{a(x-x_1)}+c$$
+> $b^2-4ac=0$
+>
+> $$e=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)^2}\,\mathrm{d}x\\
+> =\frac{m}{a}\int\frac{x-x_1+\frac{n}{m}+x_1}{(x-x_1)^2}\,\mathrm{d}x\\
+> =\frac{m}{a}\Bigg(\int\frac{1}{x-x_1}\,\mathrm{d}(x-x_1)+\int\frac{\frac{n}{m}+x_1}{(x-x_1)^2}\,\mathrm{d}(x-x_1)\Bigg)\\
+> =\frac{m}{a}\ln|x-x_1|-\frac{n+mx_1}{a(x-x_1)}+c$$
 >
 > ---
 >
 > $b^2-4ac>0$
 >
-> $$e=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)(x-x_2)}\,dx\\
-> =\frac{m}{a}\int\Big(\frac{A}{x-x_1}+\frac{B}{x-x_2}\Big)\,dx$$
+> $$e=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)(x-x_2)}\,\mathrm{d}x\\
+> =\frac{m}{a}\int\Big(\frac{A}{x-x_1}+\frac{B}{x-x_2}\Big)\,\mathrm{d}x$$
 >
 > $\quad -x_2A-x_1B=\frac{n}{m}$
 >
@@ -497,16 +497,16 @@ eg.2(分子1次,分母2次)
 >
 > $b^2-4ac<0$
 >
-> $$e=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)^2+i}\,dx\\
-> =\frac{m}{a}\Bigg(\int\frac{x-x_1}{x^2+2x_1x+x_1^2+i}\,dx+(\frac{n}{m}+x_1)\int\frac{1}{x^2+2x_1x+x_1^2+i}\,dx\Bigg)\\
-> =\frac{m}{a}\Bigg(\frac{1}{2}\int\frac{d(x^2+2x_1x+x_1^2+i)}{x^2+2x_1x+x_1^2+i}+(\frac{n}{m}+x_1)\int\frac{1}{x^2+2x_1x+x_1^2+i}\,dx\Bigg)\\
-> =\frac{m}{2a}ln|x^2+2x_1x+x_1^2+i|+\frac{n+mx_1}{a}\int\frac{1}{x^2+2x_1x+x_1^2+i}\,dx$$
+> $$e=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)^2+i}\,\mathrm{d}x\\
+> =\frac{m}{a}\Bigg(\int\frac{x-x_1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x+(\frac{n}{m}+x_1)\int\frac{1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x\Bigg)\\
+> =\frac{m}{a}\Bigg(\frac{1}{2}\int\frac{\mathrm{d}(x^2+2x_1x+x_1^2+i)}{x^2+2x_1x+x_1^2+i}+(\frac{n}{m}+x_1)\int\frac{1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x\Bigg)\\
+> =\frac{m}{2a}\ln|x^2+2x_1x+x_1^2+i|+\frac{n+mx_1}{a}\int\frac{1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x$$
 >
 > 接着右...如[4.3.eg.1.3](#4.3.eg.1.3)
 
 通解:(分子最高次数比分母小)
 
-$$设\int\frac{Q(x)}{P(x)}\,dx$$
+$$设\int\frac{Q(x)}{P(x)}\,\mathrm{d}x$$
 
 $$则Q(x)=\\
 n(x-a_0)^{\alpha_0}(x-a_0)^{\alpha_0-1}\cdots(x-a_0)\\
@@ -520,8 +520,8 @@ n(x-a_0)^{\alpha_0}(x-a_0)^{\alpha_0-1}\cdots(x-a_0)\\
 
 eg.3.1
 
-> $$e=\int\frac{x^2+1}{(x+2)(x+1)^2}\,dx\\
-> =\int\Big(\frac{A_1}{x+2}+\frac{A_2}{(x+1)^2}+\frac{A_3}{x+1}\Big)\,dx\\
+> $$e=\int\frac{x^2+1}{(x+2)(x+1)^2}\,\mathrm{d}x\\
+> =\int\Big(\frac{A_1}{x+2}+\frac{A_2}{(x+1)^2}+\frac{A_3}{x+1}\Big)\,\mathrm{d}x\\
 > =\int\frac{A_1(x+1)^2+A_2(x+2)+A_3(x+2)(x+1)}{(x+2)(x+1)^2}$$
 >
 > 得到$A_1(x^2+2x+1)+A_2(x+2)+A_3(x^2+3x+2)$
@@ -536,7 +536,7 @@ eg.3.1
 >
 > 得到$A_1=5;A_2=2;A_3=-4$
 >
-> $$e=\int\Big(\frac{5}{x+2}+\frac{2}{(x+1)^2}-\frac{1}{x+1}\Big)\,dx$$
+> $$e=\int\Big(\frac{5}{x+2}+\frac{2}{(x+1)^2}-\frac{1}{x+1}\Big)\,\mathrm{d}x$$
 >
 > 然后拆开积,完成
 
@@ -552,7 +552,7 @@ $$得到\Delta x_1, \Delta x_2\quad\cdots\quad\Delta x_n$$
 
 $$A=\Delta x_1f(\xi_1) + \Delta x_2f(\xi_2)+\quad\cdots\quad+\Delta x_1f(\xi_n)$$
 
-$$\lambda=max(\Delta x_1\quad\cdots\quad\Delta x_n)$$
+$$\lambda=\max(\Delta x_1\quad\cdots\quad\Delta x_n)$$
 
 $$A=\lim\limits_{\lambda\rightarrow0}\sum\limits_{i=1}^nf(\xi_i)\Delta x_i$$
 
@@ -564,52 +564,52 @@ $$A=\lim\limits_{\lambda\rightarrow0}\sum\limits_{i=1}^nf(\xi_i)\Delta x_i$$
 
 补充:
 
-$$\lim\limits_{n\rightarrow\infty}\sum\limits_{i=1}^nf(\frac{i}{n})=\int_0^1f(x)\,dx$$
+$$\lim\limits_{n\rightarrow\infty}\sum\limits_{i=1}^nf(\frac{i}{n})=\int_0^1f(x)\,\mathrm{d}x$$
 
 ### 5.2 定积分的性质,微积分基本定理
 
 性质1:
 
-$$\int_a^b\Big(\alpha f(x)+\beta g(x)\Big)\,dx=\alpha\int_a^bf(x)\,dx+\beta\int_a^bg(x)\,dx$$
+$$\int_a^b\Big(\alpha f(x)+\beta g(x)\Big)\,\mathrm{d}x=\alpha\int_a^bf(x)\,\mathrm{d}x+\beta\int_a^bg(x)\,\mathrm{d}x$$
 
 性质2:
 
 $$a<b<c\\
-\int_a^bf(x)\,dx=\int_a^cf(x)\,dx+\int_c^bf(x)\,dx$$
+\int_a^bf(x)\,\mathrm{d}x=\int_a^cf(x)\,\mathrm{d}x+\int_c^bf(x)\,\mathrm{d}x$$
 
 性质3:
 
 $$f(x)\equiv1\\
-\int_a^b1\,dx=b-a\\
-\Rightarrow\int_a^bk\,dx=k(b-a)$$
+\int_a^b1\,\mathrm{d}x=b-a\\
+\Rightarrow\int_a^bk\,\mathrm{d}x=k(b-a)$$
 
 性质4:
 
 $$f(x)\geq0\\
-\int_a^bf(x)\,dx\geq0$$
+\int_a^bf(x)\,\mathrm{d}x\geq0$$
 
 推导1:
 
 $$f(x)\leq g(x)\\
-\int_a^bf(x)\,dx\leq\int_a^bf(x)\,dx$$
+\int_a^bf(x)\,\mathrm{d}x\leq\int_a^bf(x)\,\mathrm{d}x$$
 
 推导2:
 
-$$|\int_a^bf(x)\,dx|\leq\int_a^bf(x)\,dx$$
+$$|\int_a^bf(x)\,\mathrm{d}x|\leq\int_a^bf(x)\,\mathrm{d}x$$
 
 性质5:
 
 $$f(x)_{max}=M;f(x)_{min}=m;\quad x\in[a, b]\\
-m(b-a)\leq\int_a^bf(x)\,dx\leq M(b-a)$$
+m(b-a)\leq\int_a^bf(x)\,\mathrm{d}x\leq M(b-a)$$
 
 性质6:
 
 $$f(x)连续,存在\xi\in[a, b]\\
-使\int_a^bf(x)\,dx=f(\xi)(b-a)$$
+使\int_a^bf(x)\,\mathrm{d}x=f(\xi)(b-a)$$
 
 定理1:
 
-$$p(x)=\int_a^xf(t)\,dt;\quad x\in[a,b]\\
+$$p(x)=\int_a^xf(t)\,\mathrm{d}t;\quad x\in[a,b]\\
 p'(x)=f(x)$$
 
 上限是x,直接将x带入被积函数
@@ -628,12 +628,12 @@ p'(x)=f(x)$$
 
 定理5:
 
-$$[\int_{h(x)}^{g(x)}f(x)\,dx]'=\int_{h(x)}^cf(x)\,dx+\int_c^{g(x)}f(x)\,dx\\
+$$[\int_{h(x)}^{g(x)}f(x)\,\mathrm{d}x]'=\int_{h(x)}^cf(x)\,\mathrm{d}x+\int_c^{g(x)}f(x)\,\mathrm{d}x\\
 =f(g(x))g'(x)-f(h(x))h'(x)$$
 
 牛-莱公式:
 
-$$\int_a^bf(x)\,dx=F(x)|_a^b=F(a)-F(b)$$
+$$\int_a^bf(x)\,\mathrm{d}x=F(x)|_a^b=F(a)-F(b)$$
 
 ### 5.3 定积分的换元和分部积分法
 
@@ -645,16 +645,16 @@ $\phi(t)$单调(增,减)
 
 上下限也变原变量上(下)限对应新变量上(下)限
 
-$$\int_a^bf(x)\,dx=\int_\alpha^\beta f(\phi(t))\,\phi'(t)\,dt$$
+$$\int_a^bf(x)\,\mathrm{d}x=\int_\alpha^\beta f(\phi(t))\,\phi'(t)\,\mathrm{d}t$$
 
 奇偶定积分:
 
-$$f(x)偶\Rightarrow\int_{-a}^af(x)\,dx=2\int_0^af(x)\,dx\\
-f(x)奇\Rightarrow\int_{-a}^af(x)\,dx=0$$
+$$f(x)偶\Rightarrow\int_{-a}^af(x)\,\mathrm{d}x=2\int_0^af(x)\,\mathrm{d}x\\
+f(x)奇\Rightarrow\int_{-a}^af(x)\,\mathrm{d}x=0$$
 
 分部积分法:
 
-$$\int_a^bu\,dv=uv|_a^b-\int_a^bv\,du$$
+$$\int_a^bu\,\mathrm{d}v=uv|_a^b-\int_a^bv\,\mathrm{d}u$$
 
 ### 5.4 定积分应用-求面(体)积
 
@@ -662,22 +662,22 @@ $$\int_a^bu\,dv=uv|_a^b-\int_a^bv\,du$$
 
 #### 5.5.1 无穷限积分
 
-$$\int_a^{+\infty}f(x)\,dx=\lim\limits_{b\rightarrow+\infty}\int_a^bf(x)\,dx\\
-\int_{-\infty}^bf(x)\,dx=\lim\limits_{a\rightarrow-\infty}\int_a^bf(x)\,dx\\
-\int_{-\infty}^{+\infty}f(x)\,dx=\int_{-\infty}^cf(x)\,dx+\int_c^{+\infty}f(x)\,d=\cdots$$
+$$\int_a^{+\infty}f(x)\,\mathrm{d}x=\lim\limits_{b\rightarrow+\infty}\int_a^bf(x)\,\mathrm{d}x\\
+\int_{-\infty}^bf(x)\,\mathrm{d}x=\lim\limits_{a\rightarrow-\infty}\int_a^bf(x)\,\mathrm{d}x\\
+\int_{-\infty}^{+\infty}f(x)\,\mathrm{d}x=\int_{-\infty}^cf(x)\,\mathrm{d}x+\int_c^{+\infty}f(x)\,\mathrm{d}x=\cdots$$
 
-> $$\int_1^{+\infty}\frac{1}{x^p}\,dx\\
+> $$\int_1^{+\infty}\frac{1}{x^p}\,\mathrm{d}x\\
 > =\frac{1}{p-1}\cdots p>1\\
 > =发散\cdots p\leq1$$
 
 性质1:
 
-$$\int_a^{+\infty}f(x)\,dx收敛\Rightarrow\int_a^{+\infty}kf(x)\,dx收敛$$
+$$\int_a^{+\infty}f(x)\,\mathrm{d}x收敛\Rightarrow\int_a^{+\infty}kf(x)\,\mathrm{d}x收敛$$
 
 性质2:
 
-$$\int_a^{+\infty}f(x)\,dx与\int_a^{+\infty}g(x)\,dx都收敛\\
-\Rightarrow\int_a^{+\infty}\Big(f(x)\pm g(x)\Big)\,dx收敛$$
+$$\int_a^{+\infty}f(x)\,\mathrm{d}x与\int_a^{+\infty}g(x)\,\mathrm{d}x都收敛\\
+\Rightarrow\int_a^{+\infty}\Big(f(x)\pm g(x)\Big)\,\mathrm{d}x收敛$$
 
 反之不一定成立
 
@@ -686,24 +686,24 @@ $$\int_a^{+\infty}f(x)\,dx与\int_a^{+\infty}g(x)\,dx都收敛\\
 定理1:
 
 $$f(x)\geq0\\
-\int_a^{+\infty}f(x)\,dx收敛\Leftarrow\Rightarrow p(x)=\int_a^{x}f(t)\,dt有界$$
+\int_a^{+\infty}f(x)\,\mathrm{d}x收敛\Leftarrow\Rightarrow p(x)=\int_a^{x}f(t)\,\mathrm{d}t有界$$
 
 定理2:
 
 $$0\leq f(x)\leq g(x)\\
-\int_a^{+\infty}g(x)\,dx收敛\Rightarrow\int_a^{+\infty}f(x)\,dx收敛\\
-\int_a^{+\infty}f(x)\,dx发散\Rightarrow\int_a^{+\infty}g(x)\,dx发散$$
+\int_a^{+\infty}g(x)\,\mathrm{d}x收敛\Rightarrow\int_a^{+\infty}f(x)\,\mathrm{d}x收敛\\
+\int_a^{+\infty}f(x)\,\mathrm{d}x发散\Rightarrow\int_a^{+\infty}g(x)\,\mathrm{d}x发散$$
 
 定义(绝对/条件收敛):
 
-$$\int_a^{+\infty}f(x)\,dx收敛;\int_a^{+\infty}|f(x)|\,dx收敛\Rightarrow\int_a^{+\infty}f(x)\,dx绝对收敛\\
-\int_a^{+\infty}f(x)\,dx收敛;\int_a^{+\infty}|f(x)|\,dx发散\Rightarrow\int_a^{+\infty}f(x)\,dx条件收敛$$
+$$\int_a^{+\infty}f(x)\,\mathrm{d}x收敛;\int_a^{+\infty}|f(x)|\,\mathrm{d}x收敛\Rightarrow\int_a^{+\infty}f(x)\,\mathrm{d}x绝对收敛\\
+\int_a^{+\infty}f(x)\,\mathrm{d}x收敛;\int_a^{+\infty}|f(x)|\,\mathrm{d}x发散\Rightarrow\int_a^{+\infty}f(x)\,\mathrm{d}x条件收敛$$
 
 定理3:
 
 绝对收敛必收敛
 
-$$\int_a^{+\infty}|f(x)|\,dx收敛\Rightarrow\int_a^{+\infty}f(x)\,dx收敛$$
+$$\int_a^{+\infty}|f(x)|\,\mathrm{d}x收敛\Rightarrow\int_a^{+\infty}f(x)\,\mathrm{d}x收敛$$
 
 #### 5.5.2 瑕积分
 
@@ -711,11 +711,11 @@ $$\int_a^{+\infty}|f(x)|\,dx收敛\Rightarrow\int_a^{+\infty}f(x)\,dx收敛$$
 
 若函数f(x)在点a的任意一邻域内都无界,那么点a称为函数f(x)的**瑕点**(也称无穷间断点)
 
-$$\int_a^bf(x)\,dx=\lim\limits_{\epsilon^+\rightarrow0}\int_a^{b-\epsilon^+}f(x)\,dx\\
-\int_a^bf(x)\,dx=\lim\limits_{\epsilon^+\rightarrow0}\int_{a+\epsilon^+}^bf(x)\,dx\\
-\int_a^bf(x)\,dx=\int_a^cf(x)\,dx+\int_c^bf(x)\,dx=\cdots$$
+$$\int_a^bf(x)\,\mathrm{d}x=\lim\limits_{\epsilon^+\rightarrow0}\int_a^{b-\epsilon^+}f(x)\,\mathrm{d}x\\
+\int_a^bf(x)\,\mathrm{d}x=\lim\limits_{\epsilon^+\rightarrow0}\int_{a+\epsilon^+}^bf(x)\,\mathrm{d}x\\
+\int_a^bf(x)\,\mathrm{d}x=\int_a^cf(x)\,\mathrm{d}x+\int_c^bf(x)\,\mathrm{d}x=\cdots$$
 
-$$\int_0^1\frac{1}{x^p}\,dx\\
+$$\int_0^1\frac{1}{x^p}\,\mathrm{d}x\\
 =\frac{1}{1-p}\cdots p>1\\
 =发散\cdots p\leq1$$
 
@@ -731,7 +731,7 @@ $$\int_0^1\frac{1}{x^p}\,dx\\
 
 #### 5.5.3伽马函数
 
-$$\Gamma(r)=\int_0^{+\infty}x^{r-1}x^{-x}\,dx\qquad(r>0)$$
+$$\Gamma(r)=\int_0^{+\infty}x^{r-1}x^{-x}\,\mathrm{d}x\qquad(r>0)$$
 
 性质:
 
@@ -757,37 +757,37 @@ $$\Gamma(r+1)=r\Gamma(r)\\
 概念:体积(曲顶柱体)
 
 $$d_i为小区域面积\qquad d=\max\{d_i\}\\
-\lim\limits_{d\rightarrow0}\sum\limits_{i=1}^nf(x_i,y_i)\Delta\delta i=\iint\limits_D f(x,y)\,d\sigma=\iint\limits_D f(x,y)\,dxdy$$
+\lim\limits_{d\rightarrow0}\sum\limits_{i=1}^nf(x_i,y_i)\Delta\delta i=\iint\limits_D f(x,y)\,\mathrm{d}\sigma=\iint\limits_D f(x,y)\,\mathrm{d}x\mathrm{d}y$$
 
 $D\cdots定义域$
 
 性质1:
 
-$\iint\limits_D kf(x,y)\,d\sigma=k\iint\limits_D f(x,y)\,d\sigma$
+$\iint\limits_D kf(x,y)\,\mathrm{d}\sigma=k\iint\limits_D f(x,y)\,\mathrm{d}\sigma$
 
 性质2:
 
-$\iint\limits_D [f(x,y)\pm g(x,y)]\,d\sigma=\iint\limits_D f(x,y)\,d\sigma\pm\iint\limits_D g(x,y)\,d\sigma$
+$\iint\limits_D [f(x,y)\pm g(x,y)]\,\mathrm{d}\sigma=\iint\limits_D f(x,y)\,\mathrm{d}\sigma\pm\iint\limits_D g(x,y)\,\mathrm{d}\sigma$
 
 性质3:
 
 $D=D_1+D_2$
 
-$\iint\limits_D f(x,y)\,d\sigma=\iint\limits_{D_1} f(x,y)\,d\sigma+\iint\limits_{D_2} f(x,y)\,d\sigma$
+$\iint\limits_D f(x,y)\,\mathrm{d}\sigma=\iint\limits_{D_1} f(x,y)\,\mathrm{d}\sigma+\iint\limits_{D_2} f(x,y)\,\mathrm{d}\sigma$
 
 性质4:
 
-$f(x,y)\leq g(x,y)\Rightarrow\iint\limits_D f(x,y)\,d\sigma\leq\iint\limits_D g(x,y)\,d\sigma$
+$f(x,y)\leq g(x,y)\Rightarrow\iint\limits_D f(x,y)\,\mathrm{d}\sigma\leq\iint\limits_D g(x,y)\,\mathrm{d}\sigma$
 
 推论:
 
-$|\iint\limits_D f(x,y)\,d\sigma|\leq\iint\limits_D |f(x,y)|\,d\sigma$
+$|\iint\limits_D f(x,y)\,\mathrm{d}\sigma|\leq\iint\limits_D |f(x,y)|\,\mathrm{d}\sigma$
 
 性质5:
 
 $f(x,y)\equiv1$
 
-$\iint\limits_D 1\,d\sigma=\sigma$
+$\iint\limits_D 1\,\mathrm{d}\sigma=\sigma$
 
 性质6:
 
@@ -797,38 +797,38 @@ $m,M为f(x,y)在D内的最小值和最大值$
 
 二元函数中值定理
 
-$在D内一定可以找到一点,使得f(\xi,n)\sigma=\iint\limits_Df(x,y)\,d\sigma$
+$在D内一定可以找到一点,使得f(\xi,n)\sigma=\iint\limits_Df(x,y)\,\mathrm{d}\sigma$
 
-$m\sigma\leq\iint\limits_D f(x,y)\,d\sigma\leq M\sigma$
+$m\sigma\leq\iint\limits_D f(x,y)\,\mathrm{d}\sigma\leq M\sigma$
 
 ### 6.8 二重积分的计算(直角/极坐标系)
 
 #### 直角坐标系
 
-$$X型:\iint\limits_Df(x,y)\,dxdy=\int_a^b\,dx\int_{\phi_1(x)}^{\phi_2(x)}f(x,y)\,dy\\
-Y型:\iint\limits_Df(x,y)\,dxdy=\int_c^d\,dy\int_{\phi_1(y)}^{\phi_2(y)}f(x,y)\,dx$$
+$$X型:\iint\limits_Df(x,y)\,\mathrm{d}x\mathrm{d}y=\int_a^b\,\mathrm{d}x\int_{\phi_1(x)}^{\phi_2(x)}f(x,y)\,\mathrm{d}y\\
+Y型:\iint\limits_Df(x,y)\,\mathrm{d}x\mathrm{d}y=\int_c^d\,\mathrm{d}y\int_{\phi_1(y)}^{\phi_2(y)}f(x,y)\,\mathrm{d}x$$
 
 eg.1
 
 求顶点为(0,0,0),(0,1,0),(1,1,0),(1,1,1)的四面体的体积
 
-> $$\iint\limits_Dxy\,dxdy\\
-> X型:\:=\int_0^1dx\int_x^1xy\,dy\\
-> =\int_0^1\frac{1}{2}xy^2|_x^1\,dx\\
-> =\int_0^1\frac{1}{2}x-\frac{1}{2}x^3\,dx=\frac{1}{8}\\
-> Y型:\:=\int_0^1dy\int_0^yxy\,dx$$
+> $$\iint\limits_Dxy\,\mathrm{d}x\mathrm{d}y\\
+> X型:\:=\int_0^1\mathrm{d}x\int_x^1xy\,\mathrm{d}y\\
+> =\int_0^1\frac{1}{2}xy^2|_x^1\,\mathrm{d}x\\
+> =\int_0^1\frac{1}{2}x-\frac{1}{2}x^3\,\mathrm{d}x=\frac{1}{8}\\
+> Y型:\:=\int_0^1\mathrm{d}y\int_0^yxy\,\mathrm{d}x$$
 
 特殊1:
 
 $D为矩形,x\in[a,b],y\in[c,d]$
 
-$$\int_a^bdx\int_c^df(x,y)\,dy=\int_c^ddy\int_a^bf(x,y)\,dx$$
+$$\int_a^b\mathrm{d}x\int_c^df(x,y)\,\mathrm{d}y=\int_c^d\mathrm{d}y\int_a^bf(x,y)\,\mathrm{d}x$$
 
 特殊2:
 
 $D为矩形,x\in[a,b],y\in[c,d],f(x,y)=f_1(x)f_2(y)$
 
-$$\int_a^bdx\int_c^df(x,y)\,dy=\int_a^bf_1(x)\,dx\int_c^df_2(y)\,dy$$
+$$\int_a^b\mathrm{d}x\int_c^df(x,y)\,\mathrm{d}y=\int_a^bf_1(x)\,\mathrm{d}x\int_c^df_2(y)\,\mathrm{d}y$$
 
 #### 极坐标系
 
@@ -858,11 +858,11 @@ $S_n=a+aq+\cdots+aq^{n-1}=\frac{a(1-q^n)}{1-q}$
 
 当$n\rightarrow+\infty$时
 
-1. $|q|<1,收敛\quad\lim\limits_{n\rightarrow+\infty}S_n=\frac{a}{1-q}$
-2. $|q|>1,发散$
-3. $|q|=1$
-    1. $q=1\quad S_n=a+a+a+\cdots\qquad发散$
-    2. $q=-1\quad S_n=a-a+a-a+a-a+\cdots$
+- $|q|<1,收敛\quad\lim\limits_{n\rightarrow+\infty}S_n=\frac{a}{1-q}$
+- $|q|>1,发散$
+- $|q|=1$
+  - $q=1\quad S_n=a+a+a+\cdots\qquad发散$
+  - $q=-1\quad S_n=a-a+a-a+a-a+\cdots\qquad发散$
 
 调和级数:
 
@@ -872,13 +872,13 @@ $S=1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}+\cdots\qquad发散$
 
 性质1:
 
-$u_1+u_2+\cdots+u_n+\cdots=S\qquad收敛$
+$u_1+u_2+\cdots+u_n+\cdots=S\cdots收敛$
 
-$au_1+au_2+\cdots+au_n+\cdots=aS\qquad收敛$
+$au_1+au_2+\cdots+au_n+\cdots=aS\cdots收敛$
 
 性质2:
 
-$\sum u_n\quad\sum v_n都收敛\qquad\sum(u_n\pm v_n)也收敛,反之不一定成立$
+$\sum u_n\quad\sum v_n都收敛\cdots\sum(u_n\pm v_n)也收敛,反之不一定成立$
 
 性质3:
 
@@ -898,9 +898,136 @@ $\sum a_n收敛\quad\sum b_n发散\Rightarrow\sum(a_n+b_n)发散$
 
 $\sum a_n发散\quad\sum b_n发散\Rightarrow\sum(a_n+b_n)可能不发散$
 
-### 7.2 正顶级数
+### 7.2 正项级数
+
+$$u_n\geq0$$
+
+定理1:
+
+$\sum u_n为正项级数且收敛\Leftarrow\Rightarrow\{S_n\}有界$
+
+定理2:
+
+比较判别法:
+
+$正项级数\sum u_n\quad\sum v_n\\
+u_n\leq v_n\\$
+
+- $\sum u_n收敛\Rightarrow\sum v_n收敛$
+- $\sum v_n发散\Rightarrow\sum u_n发散$
+
+p级数:
+
+$\sum\frac{1}{n^p}\quad(n:1\rightarrow\infty)$
+
+$p\leq1\cdots发散\\
+p>1\cdots收敛$
+
+实际做题中，在用比较判别法时，通常用几何级数，调和级数，p级数当参照物
+
+比较判别法推论:
+
+$正项级数\sum u_n\quad\sum v_n\\
+\lim\limits_{n\rightarrow+\infty}\frac{u_n}{v_n}=l$
+
+- $0<l<+\infty\cdots\sum u_n\ \sum v_n有相同敛散性$
+- $l=0\cdots\sum u_n\ \sum v_n都收敛$
+- $l=+\infty\cdots\sum u_n\ \sum v_n都发散$
+
+比值判别法:
+
+$正项级数\sum u_n\\
+\lim\limits_{n\rightarrow+\infty}\frac{u_{n+1}}{u_n}=l$
+
+- $l<1\cdots收敛$
+- $l>1\cdots发散$
+- $l=1\cdots无法判断$
+
+根值判别法(柯西判别法):
+
+$正项级数\sum u_n\\
+\lim\limits_{n\rightarrow+\infty}\sqrt[n]{u_n}=\rho$
+
+- $\rho<1\cdots收敛$
+- $\rho>1\cdots发散$
+- $\rho=1\cdots无法判断$
+
+判断正项级数$u_n$:
+
+$\lim\limits_{n\rightarrow+\infty}u_n$
+
+- $\neq0\cdots发散$
+- $=0$
+  - 根值判别法
+  - 比值判别法
+  - 比较判别法推论
+  - 比较判别法
+    - 几何级数
+    - 调和级数
+    - p级数
 
 ### 7.3 任意项级数
+
+交错级数:
+
+$\sum(-1)^nu_n\qquad(n:1\rightarrow\infty)$
+
+莱布尼兹定理1:
+
+判断交错级数是否收敛
+
+交错级数,满足:
+
+1. $u_n\geq u_n+1$
+2. $\lim\limits_{n\rightarrow+\infty}u_n=0$
+
+则交错级数收敛
+
+证明上定理条件1:
+
+1. $u_n-u_{n+1}\geq0$
+2. $\frac{u_n}{u_{n+1}}\geq1$
+3. $u_n=f(n)\rightarrow f(x)可导\\f'(x)\leq0\qquad(x较大时)$
+
+任意项级数敛散性判定:
+
+$u_1+u_2+u_3+\cdots\rightarrow\underbrace{|u_1|+|u_2|+|u_3|+\cdots}_{绝对值级数}$
+
+定理2:
+
+$\sum|u_n|收敛\Rightarrow\sum u_n收敛\\
+\sum u_n发散\Rightarrow\sum |u_n|发散$
+
+(加绝对值增加发散性，去绝对值增加收敛性)
+
+---
+
+$\sum|u_n|收敛\cdots\sum|u_n|绝对收敛\\
+\sum|u_n|发散\quad\sum u_n收敛\cdots条件收敛$
+
+定理3:
+
+$对任意项级数:u_1+u_2+\cdots+u_n+\cdots\qquad\lim\limits_{n\rightarrow+\infty}|\frac{u_{n+1}}{u_n}|=l$
+
+- $l<1\cdots\sum u_n绝对收敛$
+- $l>1\cdots\sum u_n发散$
+- $l=1\cdots无法判断$
+
+总结:
+
+- 收敛:
+  - 绝对收敛: $\sum|u_n|收敛(正项级数)\quad\sum u_n收敛$
+  - 条件收敛(多见于交错级数): $\sum|u_n|发散(正项级数)\quad\sum u_n收敛(莱布尼兹定理)$
+- 发散:
+  - $\sum u_n发散(通项不\rightarrow0/定义)\rightarrow\sum|u_n|发散$
+
+性质1:
+
+$\sum u_n绝对收敛\Rightarrow任意交换顺序,\sum u_n还是收敛且和不变$
+
+性质2:
+
+$\sum u_n\quad\sum v都绝对收敛\Rightarrow\sum u_iv_i也绝对收敛$
 
 ### 7.4 幂级数
 
