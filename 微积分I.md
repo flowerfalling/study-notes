@@ -319,6 +319,30 @@ $注:0\times\infty,\:0^0,\:1^\infty,\:\infty^0可通过e^{\ln()}来转化$
 
 ### 4.1 不定积分
 
+不定积分: 微分的逆运算或求导的逆运算
+
+$$\int f(x)\,dx=F(x)+c$$
+
+注: 一定要加常数c
+
+性质1:
+
+$[\int f(x)\,dx]'=f(x)$
+
+$\int f'(x)\,dx=f(x)+c\\
+\int f''(x)\,dx=f'(x)+c$
+
+性质2:
+
+$\int kf(x)\,dx=k\int f(x)\,dx$
+
+1. k是常数
+2. k是与x无关的另外的变量
+
+性质3:
+
+$\int[\underbrace{f_1(x)+f_2(x)+\cdots+f_n(x)}_{有限个}]\,dx=\int f_1(x)\,dx+\cdots+\int f_n(x)\,dx$
+
 ### 4.2 积分法
 
 #### 4.2.1 第一换元积分法
