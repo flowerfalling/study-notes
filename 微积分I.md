@@ -836,6 +836,68 @@ $$\int_a^bdx\int_c^df(x,y)\,dy=\int_a^bf_1(x)\,dx\int_c^df_2(y)\,dy$$
 
 ### 7.1 无穷级数的定义和性质
 
+$无穷级数:S=\overbrace{u_1+u_2+\cdots+\underbrace{u_n}_{通项}+\cdots}^{无穷项}$
+
+$部分和:S_n=u_1+u_2+\cdots+u_n$
+
+$S_1=u_1\quad S_2=u_1+u_2\quad S_3=u_1+u_2+u_3$
+
+$\lim\limits_{n\rightarrow+\infty}S_n=S$
+
+$余项R_n=S-S_n=u_{n+1}+\cdots$
+
+几何级数:
+
+$S=a+aq+aq^2+aq^3+\cdots(a\neq0)$
+
+首项: a
+
+公比: q
+
+$S_n=a+aq+\cdots+aq^{n-1}=\frac{a(1-q^n)}{1-q}$
+
+当$n\rightarrow+\infty$时
+
+1. $|q|<1,收敛\quad\lim\limits_{n\rightarrow+\infty}S_n=\frac{a}{1-q}$
+2. $|q|>1,发散$
+3. $|q|=1$
+    1. $q=1\quad S_n=a+a+a+\cdots\qquad发散$
+    2. $q=-1\quad S_n=a-a+a-a+a-a+\cdots$
+
+调和级数:
+
+$S=1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}+\cdots\qquad发散$
+
+无穷级数的性质:
+
+性质1:
+
+$u_1+u_2+\cdots+u_n+\cdots=S\qquad收敛$
+
+$au_1+au_2+\cdots+au_n+\cdots=aS\qquad收敛$
+
+性质2:
+
+$\sum u_n\quad\sum v_n都收敛\qquad\sum(u_n\pm v_n)也收敛,反之不一定成立$
+
+性质3:
+
+$收敛级数,任意加小括号仍收敛$
+
+性质4:
+
+$级数去掉,加上,改变有限项,敛散性不变$
+
+性质5:
+
+$级数收敛的必要条件:\lim\limits_{n\rightarrow\infty}u_n=0$
+
+性质6:
+
+$\sum a_n收敛\quad\sum b_n发散\Rightarrow\sum(a_n+b_n)发散$
+
+$\sum a_n发散\quad\sum b_n发散\Rightarrow\sum(a_n+b_n)可能不发散$
+
 ### 7.2 正顶级数
 
 ### 7.3 任意项级数
