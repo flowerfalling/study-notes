@@ -1419,12 +1419,87 @@ eg.4
 
 eg.5
 
-$$\begin{align*}
-    y'&=\frac{y''+y}{2}\\
-    特征方程:\:r&=\frac{r^2+1}{2}\\
-    r^2-2r+1&=0\\
-    r_1=&r_2=1\\
-    y&=c_1e^x+c_2xe^x
-\end{align*}$$
+> $$\begin{align*}
+>   y'&=\frac{y''+y}{2}\\
+>   特征方程:\:r&=\frac{r^2+1}{2}\\
+>   r^2-2r+1&=0\\
+>   r_1=&r_2=1\\
+>   y&=c_1e^x+c_2xe^x
+> \end{align*}$$
 
 ### 8.4 差分方程
+
+$一阶差分:\quad\Delta y_t=y_{t+1}-y_t=y(t+1)-y(t)$
+
+$二阶差分:\quad\Delta^2y_t=\Delta y_{t+1}-\Delta y_t=y_{t+2}+2y_{t+1}+y_t$
+
+定义: 含有差分或者含有未知函数若干个时期的值的方程叫做差分方程
+
+线性差分方程: 各阶差分均是一次的
+
+解: 带进去成立
+
+通解: 如果差分方程的解含有独立的任意常数的个数等于方程的阶数就叫通解
+
+一阶常系数线性差分方程:
+
+齐次:
+
+$$\begin{align*}
+    y_{t+1}+ay_t&=0\\
+    y_{t+1}&=-ay_t\\
+    &=(-a)^2y_{t-1}\\
+    &\vdots\\
+    &=(-a)^{t+1}y_0\\
+    y_t&=c(-a)^t
+\end{align*}$$
+
+非齐次:
+
+非齐次的通解: 齐次的通解+非齐次的一个特解
+
+$$\begin{align*}
+    y_{t+1}+ay_t&=f(t)\\
+    \left\{
+    \begin{align*}
+        \overline{y_{t+1}}+a\overline{y_t}&=0\\
+        y_{t+1}^*+ay_t^*&=f(t)\\  
+    \end{align*}
+    \right.\\
+    \overline{y_{t+1}}+y_{t+1}^*+a(\overline{y_t}+y_t^*)&=f(t)\\
+    通解:\overline{y_t}+&y_t^*
+\end{align*}$$
+
+情形1:$f(t)=b$
+
+$a=-1$
+
+$$y^*=bt$$
+
+验证:
+
+$$\begin{align*}
+    b(t+1)+abt&=b\\
+    \cancel{bt}+\cancel{b}-\cancel{bt}&=\cancel{b}
+\end{align*}$$
+
+$a\neq-1$
+
+$$y^*=\frac{b}{a+1}$$
+
+验证:
+
+$$\begin{align*}
+    \frac{\cancel{b}}{a+1}+a\frac{\cancel{b}}{a+1}&=\cancel{b}\\
+    \frac{a+1}{a+1}=1
+\end{align*}$$
+
+eg.1
+
+> $$\begin{align*}
+>   y_{t+1}+2y_t&=3\\
+>   \rightarrow y_{t+1}+2y_t&=0\\
+>   \overline{y_t}&=c(-2)^t\\
+>   y^*&=\frac{b}{a+1}=1\\
+>   y_t&=c(-2)^t+1
+> \end{align*}$$
