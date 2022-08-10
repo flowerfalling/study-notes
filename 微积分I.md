@@ -69,7 +69,7 @@ $\{x_n\}$收敛于a,任何子数列$\{x_{k_n}\}$收敛于a
 
 推论3:
 
-原数列收敛$\Leftarrow\Rightarrow$奇数项,偶数项构成的子数列收敛,且极限相同
+原数列收敛$\Leftrightarrow$奇数项,偶数项构成的子数列收敛,且极限相同
 
 ### 1.5 函数极限
 
@@ -95,37 +95,26 @@ $\frac{\Delta y}{\Delta x}\quad\Delta y与\Delta x趋向于0的快慢程度$
 
 常见函数的求导公式:
 
-$(c)'=0$
-
-$(x^a)'=ax^{a-1}$
-
-$(sin\,x)'=cos\,x$
-
-$(cos\,x)'=-sin\,x$
-
-$(tan\,x)'=sec^2\,x$
-
-$(cot\,x)'=-csc^2\,x$
-
-$(sec\,x)'=sec\,x\:tan\,x$
-
-$(cscs\,x)'=-csc\,x\:cot\,x$
-
-$(arcsin\,x)'=\frac{1}{\sqrt{1-x^2}}$
-
-$(arccos\,x)'=-\frac{1}{\sqrt{1-x^2}}$
-
-$(arctan\,x)'=\frac{1}{1+x^2}$
-
-$(arccot\,x)'=-\frac{1}{1+x^2}$
-
-$(a^x)'=a^x\,\ln a\cdots (e^x)'=e^x$
-
-$(\log_ax)'=\frac{a}{x\,\ln a}\qquad (\ln x)'=\frac{1}{x}$
+$$\begin{align*}
+    (c)'&=0\\
+    (x^a)'&=ax^{a-1}\\
+    (sin\,x)'&=cos\,x\\
+    (cos\,x)'&=-sin\,x\\
+    (tan\,x)'&=sec^2\,x\\
+    (cot\,x)'&=-csc^2\,x\\
+    (sec\,x)'&=sec\,x\:tan\,x\\
+    (cscs\,x)'&=-csc\,x\:cot\,x\\
+    (arcsin\,x)'&=\frac{1}{\sqrt{1-x^2}}\\
+    (arccos\,x)'&=-\frac{1}{\sqrt{1-x^2}}\\
+    (arctan\,x)'&=\frac{1}{1+x^2}\\
+    (arccot\,x)'&=-\frac{1}{1+x^2}\\
+    (a^x)'&=a^x\,\ln a\qquad (e^x)'=e^x\\
+    (\log_ax)'&=\frac{a}{x\,\ln a}\qquad (\ln x)'=\frac{1}{x}
+\end{align*}$$
 
 ---
 
-可导$\Leftarrow\Rightarrow$左右导数存在且相等
+可导$\Leftrightarrow$左右导数存在且相等
 
 可导一定连续,连续不一定可导,不连续一定不可导
 
@@ -133,11 +122,15 @@ $(\log_ax)'=\frac{a}{x\,\ln a}\qquad (\ln x)'=\frac{1}{x}$
 
 前提:u(x),v(x)可导
 
-$$(u(x)\pm v(x))'=u'(x)\pm v'(x)\\
-(\underbrace{u_1(x)\pm\cdots\pm u_n(x)}_{有限个})'=u_1'(x)\pm\cdots\pm u_n'(x)$$
+$$\begin{align*}
+    (u(x)\pm v(x))'&=u'(x)\pm v'(x)\\
+    (\underbrace{u_1(x)\pm\cdots\pm u_n(x)}_{有限个})'&=u_1'(x)\pm\cdots\pm u_n'(x)
+\end{align*}$$
 
-$$(uv)'=u'v+uv'\\
-(\frac{u}{v})'=\frac{u'v-uv'}{v^2}$$
+$$\begin{align*}
+    (uv)'&=u'v+uv'\\
+    (\frac{u}{v})'&=\frac{u'v-uv'}{v^2}
+\end{align*}$$
 
 反函数求导:
 
@@ -146,8 +139,10 @@ $$y=f(x)\qquad x=\phi(y)\\
 
 复合函数求导:
 
-$$y=f(g(h(x)))\\
-y'=f'(g(h(x)))\,g'(h(x))\,h'(x)$$
+$$\begin{align*}
+    y&=f(g(h(x)))\\
+    y'&=f'(g(h(x)))\,g'(h(x))\,h'(x)
+\end{align*}$$
 
 ### 2.4 高阶导数
 
@@ -157,18 +152,22 @@ $$y',\quad y'',\quad y''',\quad y^{(4)}\cdots$$
 
 eg.1
 
-$$x^2+y^2=r^2$$
-
-两边同时对x求导
-
-$$2x+2yy'=0\\
-y'=-\frac{x}{y}$$
-
-高阶导数求导法则:
-
-$$(u\pm v)^{(n)}=u^{(n)}\pm v^{(n)}\\
-(cu)^{(n)}=cu^{(n)}\\
-(uv)^{(n)}=\sum\limits_{i=0}^n\complement_n^iu^{(n-i)}v^{(i)}$$
+> $$x^2+y^2=r^2$$
+>
+> 两边同时对x求导
+>
+> $$\begin{align*}
+>   2x+2yy'&=0\\
+>   y'&=-\frac{x}{y}
+> \end{align*}$$
+>
+> 高阶导数求导法则:
+>
+> $$\begin{align*}
+>   (u\pm v)^{(n)}&=u^{(n)}\pm v^{(n)}\\
+>   (cu)^{(n)}&=cu^{(n)}\\
+>   (uv)^{(n)}&=\sum\limits_{i=0}^n\complement_n^iu^{(n-i)}v^{(i)}
+> \end{align*}$$
 
 注:
 
@@ -186,15 +185,17 @@ $$\Delta x\rightarrow\Delta y=y(x_0+\Delta x)-y(x_0)$$
 
 $\Rightarrow$可微
 
-f(x)在$x_0$除可微$\Leftarrow\Rightarrow$可导
+f(x)在$x_0$除可微$\Leftrightarrow$可导
 
 微分的基本公式:
 
-$$\mathrm{d}(u\pm v)=u'\mathrm{d}x+v'\mathrm{d}x=\mathrm{d}u+\mathrm{d}v\\
-\mathrm{d}(uv)=v\mathrm{d}u+u\mathrm{d}v\\
-\mathrm{d}(cu)=c\mathrm{d}u\\
-\mathrm{d}(\frac{u}{v})=\frac{v\mathrm{d}u-u\mathrm{d}v}{v^2}\\
-\mathrm{d}(u(v(x)))=u'(v(x))v'(x)\mathrm{d}x$$
+$$\begin{align*}
+    \mathrm{d}(u\pm v)&=u'\mathrm{d}x+v'\mathrm{d}x=\mathrm{d}u+\mathrm{d}v\\
+    \mathrm{d}(uv)&=v\mathrm{d}u+u\mathrm{d}v\\
+    \mathrm{d}(cu)&=c\mathrm{d}u\\
+    \mathrm{d}(\frac{u}{v})&=\frac{v\mathrm{d}u-u\mathrm{d}v}{v^2}\\
+    \mathrm{d}(u(v(x)))&=u'(v(x))v'(x)\mathrm{d}x
+\end{align*}$$
 
 近似计算:
 
@@ -286,8 +287,10 @@ R_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}$$
 
 eg.1
 
-> $$e^x\approx1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}\\
-> sinx\approx x-\frac{1}{3!}x^3+\frac{1}{5!}x^5+\cdots$$
+> $$\begin{align*}
+>   e^x&\approx1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}\\
+>   sinx&\approx x-\frac{1}{3!}x^3+\frac{1}{5!}x^5+\cdots
+> \end{align*}$$
 
 ### 3.2 洛必达法则
 
@@ -347,25 +350,32 @@ $\int[\underbrace{f_1(x)+f_2(x)+\cdots+f_n(x)}_{有限个}]\,\mathrm{d}x=\int f_
 
 #### 4.2.1 第一换元积分法
 
-$$\int g(x)\,\mathrm{d}x=\int f(\phi(x))\,\phi'(x)\,\mathrm{d}x=\int f(\phi(x))\,\mathrm{d}\phi(x)\\
-=\int f(u)\,\mathrm{d}u=F(u)+c=F(\phi(x))+c$$
+$$\begin{align*}
+    \int g(x)\,\mathrm{d}x&=\int f(\phi(x))\,\phi'(x)\,\mathrm{d}x\\
+    &=\int f(\phi(x))\,\mathrm{d}\phi(x)\\
+    &=\int f(u)\,\mathrm{d}u=F(u)+c=F(\phi(x))+c
+\end{align*}$$
 
 eg.1
 
-> $$\quad\int 2x\,cosx^2\,\mathrm{d}x\\
-> =\int cosx^2\,\mathrm{d}x^2\\
-> =sinx^2+c$$
+> $$\begin{align*}
+>   &\quad\int 2x\,cosx^2\,\mathrm{d}x\\
+>   =&\int cosx^2\,\mathrm{d}x^2\\
+>   =&sinx^2+c
+>   \end{align*}$$
 
 <a id="4.2.1.eg.2"></a>
 
 eg.2
 
-> $$\int\frac{1+x^2}{1+x^4}\,\mathrm{d}x\\
-> =\int\frac{\frac{1}{x^2}+1}{\frac{1}{x^2}+x^2}\,\mathrm{d}x\\
-> =\int\frac{1}{(x-\frac{1}{x})^2+2}\,\mathrm{d}(x-\frac{1}{x})\\
-> =\int\frac{1}{\sqrt{2}^2}\frac{1}{(\frac{x-\frac{1}{x}}{\sqrt{2}})^2+1}\,\mathrm{d}(x-\frac{1}{x})\\
-> =\frac{1}{\sqrt{2}}\int\frac{1}{(\frac{x-\frac{1}{x}}{\sqrt{2}})^2+1}\,\mathrm{d}(\frac{x-\frac{1}{x}}{\sqrt{2}})\\
-> =\frac{arctan(\frac{x-\frac{1}{x}}{\sqrt{2}})}{\sqrt{2}}+c$$
+> $$\begin{align*}
+>   &\int\frac{1+x^2}{1+x^4}\,\mathrm{d}x\\
+>   =&\int\frac{\frac{1}{x^2}+1}{\frac{1}{x^2}+x^2}\,\mathrm{d}x\\
+>   =&\int\frac{1}{(x-\frac{1}{x})^2+2}\,\mathrm{d}(x-\frac{1}{x})\\
+>   =&\int\frac{1}{\sqrt{2}^2}\frac{1}{(\frac{x-\frac{1}{x}}{\sqrt{2}})^2+1}\,\mathrm{d}(x-\frac{1}{x})\\
+>   =&\frac{1}{\sqrt{2}}\int\frac{1}{(\frac{x-\frac{1}{x}}{\sqrt{2}})^2+1}\,\mathrm{d}(\frac{x-\frac{1}{x}}{\sqrt{2}})\\
+>   =&\frac{arctan(\frac{x-\frac{1}{x}}{\sqrt{2}})}{\sqrt{2}}+c
+>   \end{align*}$$
 
 #### 4.2.2 第二换元积分法
 
@@ -375,13 +385,15 @@ $$x=\phi(t)\\
 
 eg.1
 
-> $$a=\int\frac{\mathrm{d}x}{\sqrt{2x-3}}\\
-> 令t=\sqrt{2x-3},\:x=\frac{1}{2}t^2+\frac{3}{2}\\
-> \mathrm{d}x=t\,\mathrm{d}t\\
-> a=\int\frac{t\,\mathrm{d}t}{(\frac{1}{2}t^2+\frac{3}{2})t}\\
-> =2\int\frac{\mathrm{d}t}{t^2+3}\\
-> =\frac{2}{3}\sqrt{3}arctan\frac{t}{\sqrt{3}}+c\\
-> =\frac{2}{3}\sqrt{3}arctan\frac{\sqrt{6x-9}}{3}+c$$
+> $$\begin{align*}
+>   a&=\int\frac{\mathrm{d}x}{\sqrt{2x-3}}\\
+>   令t=&\sqrt{2x-3},\:x=\frac{1}{2}t^2+\frac{3}{2}\\
+>   \mathrm{d}x&=t\,\mathrm{d}t\\
+>   a&=\int\frac{t\,\mathrm{d}t}{(\frac{1}{2}t^2+\frac{3}{2})t}\\
+>   &=2\int\frac{\mathrm{d}t}{t^2+3}\\
+>   &=\frac{2}{3}\sqrt{3}arctan\frac{t}{\sqrt{3}}+c\\
+>   &=\frac{2}{3}\sqrt{3}arctan\frac{\sqrt{6x-9}}{3}+c
+> \end{align*}$$
 
 #### 4.2.3 分部积分法
 
@@ -389,10 +401,12 @@ $$\int u\,\mathrm{d}v=uv-\int v\,\mathrm{d}u$$
 
 推导:
 
-$$(uv)'=u'v+uv'\\
-uv'=(uv)'-u'v\\
-\int uv'\,\mathrm{d}x=\int(uv)'\,\mathrm{d}x-\int u'v\,\mathrm{d}x\\
-\int u\,\mathrm{d}v=uv-\int v\,\mathrm{d}u$$
+$$\begin{align*}
+    (uv)'&=u'v+uv'\\
+    uv'&=(uv)'-u'v\\
+    \int uv'\,\mathrm{d}x&=\int(uv)'\,\mathrm{d}x-\int u'v\,\mathrm{d}x\\
+    \int u\,\mathrm{d}v&=uv-\int v\,\mathrm{d}u
+\end{align*}$$
 
 (1)谁放d后面
 
@@ -433,8 +447,10 @@ eg.1(分子0次,分母2次)
 >
 > $\quad a(x-x_1)(x-x_2)=0$
 >
-> $$e=\int\frac{1}{a(x-x_1)(x-x_2)}\,\mathrm{d}x\\
-> =\frac{1}{a}\int(\frac{A}{x-x_1}+\frac{B}{x-x_2})\,\mathrm{d}x$$
+> $$\begin{align*}
+>   e&=\int\frac{1}{a(x-x_1)(x-x_2)}\,\mathrm{d}x\\
+>   &=\frac{1}{a}\int(\frac{A}{x-x_1}+\frac{B}{x-x_2})\,\mathrm{d}x
+> \end{align*}$$
 >
 > $\quad -x_2A-x_1B=1$
 >
@@ -446,8 +462,10 @@ eg.1(分子0次,分母2次)
 >
 > $\quad B=\frac{1}{x_2-x_1}$
 >
-> $$e=\frac{1}{a}\Bigg(\frac{1}{x_1-x_2}\int\frac{1}{x-x_1}\,\mathrm{d}(x-x_1)+\frac{1}{x_2-x_1} \int\frac{1}{x-x_2}\,\mathrm{d}(x-x_2)\Bigg)\\
-> =\frac{1}{a}\Bigg(\frac{1}{x_1-x_2}\ln|x-x_1|+\frac{1}{x_2-x_1}\ln|x-x_2|\Bigg)$$
+> $$\begin{align*}
+>   e&=\frac{1}{a}\Bigg(\frac{1}{x_1-x_2}\int\frac{1}{x-x_1}\,\mathrm{d}(x-x_1)+\frac{1}{x_2-x_1} \int\frac{1}{x-x_2}\,\mathrm{d}(x-x_2)\Bigg)\\
+>   &=\frac{1}{a}\Bigg(\frac{1}{x_1-x_2}\ln|x-x_1|+\frac{1}{x_2-x_1}\ln|x-x_2|\Bigg)
+> \end{align*}$$
 >
 > ---
 >
@@ -462,34 +480,45 @@ eg.1(分子0次,分母2次)
 
 eg.2(分子1次,分母2次)
 
-> $$e=\int\frac{mx+n}{ax^2+bx+c}\,\mathrm{d}x\\
-> =\frac{m}{a}\int\frac{x+\frac{n}{m}}{x^2+\frac{b}{a}x+\frac{c}{a}}\,\mathrm{d}x$$
+> $$\begin{align*}
+>   e&=\int\frac{mx+n}{ax^2+bx+c}\,\mathrm{d}x\\
+>   &=\frac{m}{a}\int\frac{x+\frac{n}{m}}{x^2+\frac{b}{a}x+\frac{c}{a}}\,\mathrm{d}x
+> \end{align*}$$
 >
 > ---
 >
 > $b^2-4ac=0$
 >
-> $$e=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)^2}\,\mathrm{d}x\\
-> =\frac{m}{a}\int\frac{x-x_1+\frac{n}{m}+x_1}{(x-x_1)^2}\,\mathrm{d}x\\
-> =\frac{m}{a}\Bigg(\int\frac{1}{x-x_1}\,\mathrm{d}(x-x_1)+\int\frac{\frac{n}{m}+x_1}{(x-x_1)^2}\,\mathrm{d}(x-x_1)\Bigg)\\
-> =\frac{m}{a}\ln|x-x_1|-\frac{n+mx_1}{a(x-x_1)}+c$$
+> $$\begin{align*}
+>   e&=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)^2}\,\mathrm{d}x\\
+>   &=\frac{m}{a}\int\frac{x-x_1+\frac{n}{m}+x_1}{(x-x_1)^2}\,\mathrm{d}x\\
+>   &=\frac{m}{a}\Bigg(\int\frac{1}{x-x_1}\,\mathrm{d}(x-x_1)+\int\frac{\frac{n}{m}+x_1}{(x-x_1)^2}\,\mathrm{d}(x-x_1)\Bigg)\\
+>   &=\frac{m}{a}\ln|x-x_1|-\frac{n+mx_1}{a(x-x_1)}+c
+>   \end{align*}$$
 >
 > ---
 >
 > $b^2-4ac>0$
 >
-> $$e=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)(x-x_2)}\,\mathrm{d}x\\
-> =\frac{m}{a}\int\Big(\frac{A}{x-x_1}+\frac{B}{x-x_2}\Big)\,\mathrm{d}x$$
+> $$\begin{align*}
+>   e&=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)(x-x_2)}\,\mathrm{d}x\\
+>   &=\frac{m}{a}\int\Big(\frac{A}{x-x_1}+\frac{B}{x-x_2}\Big)\,\mathrm{d}x
+> \end{align*}$$
 >
-> $\quad -x_2A-x_1B=\frac{n}{m}$
+> $$
+>   \left\{
+>   \begin{align*}
+>       -x_2A-x_1B&=\frac{n}{m}\\
+>       Ax+Bx&=x
+>   \end{align*}\right.$$
 >
-> $\quad Ax+Bx=x$
+>解得:
 >
-> 解得:
->
-> $\quad A=\frac{\frac{n}{m}+x_1}{x_1-x_2}$
->
-> $\quad B=\frac{\frac{n}{m}+x_2}{x_2-x_1}$
+>$$\left\{
+> \begin{align*}
+>   A=\frac{\frac{n}{m}+x_1}{x_1-x_2}\\
+>   B=\frac{\frac{n}{m}+x_2}{x_2-x_1}
+> \end{align*}\right.$$
 >
 > 接着...如[4.3.eg.1.2](#4.3.eg.1.2)
 >
@@ -497,12 +526,14 @@ eg.2(分子1次,分母2次)
 >
 > $b^2-4ac<0$
 >
-> $$e=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)^2+i}\,\mathrm{d}x\\
-> =\frac{m}{a}\Bigg(\int\frac{x-x_1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x+(\frac{n}{m}+x_1)\int\frac{1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x\Bigg)\\
-> =\frac{m}{a}\Bigg(\frac{1}{2}\int\frac{\mathrm{d}(x^2+2x_1x+x_1^2+i)}{x^2+2x_1x+x_1^2+i}+(\frac{n}{m}+x_1)\int\frac{1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x\Bigg)\\
-> =\frac{m}{2a}\ln|x^2+2x_1x+x_1^2+i|+\frac{n+mx_1}{a}\int\frac{1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x$$
->
-> 接着右...如[4.3.eg.1.3](#4.3.eg.1.3)
+> $$\begin{align*}
+>e&=\frac{m}{a}\int\frac{x+\frac{n}{m}}{(x-x_1)^2+i}\,\mathrm{d}x\\
+> &=\frac{m}{a}\Bigg(\int\frac{x-x_1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x+(\frac{n}{m}+x_1)\int\frac{1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x\Bigg)\\
+>   &=\frac{m}{a}\Bigg(\frac{1}{2}\int\frac{\mathrm{d}(x^2+2x_1x+x_1^2+i)}{x^2+2x_1x+x_1^2+i}+(\frac{n}{m}+x_1)\int\frac{1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x\Bigg)\\
+>   &=\frac{m}{2a}\ln|x^2+2x_1x+x_1^2+i|+\frac{n+mx_1}{a}\int\frac{1}{x^2+2x_1x+x_1^2+i}\,\mathrm{d}x
+>   \end{align*}$$
+
+接着右...如[4.3.eg.1.3](#4.3.eg.1.3)
 
 通解:(分子最高次数比分母小)
 
@@ -520,25 +551,35 @@ n(x-a_0)^{\alpha_0}(x-a_0)^{\alpha_0-1}\cdots(x-a_0)\\
 
 eg.3.1
 
-> $$e=\int\frac{x^2+1}{(x+2)(x+1)^2}\,\mathrm{d}x\\
-> =\int\Big(\frac{A_1}{x+2}+\frac{A_2}{(x+1)^2}+\frac{A_3}{x+1}\Big)\,\mathrm{d}x\\
-> =\int\frac{A_1(x+1)^2+A_2(x+2)+A_3(x+2)(x+1)}{(x+2)(x+1)^2}$$
+> $$\begin{align*}
+>   e&=\int\frac{x^2+1}{(x+2)(x+1)^2}\,\mathrm{d}x\\
+>   &=\int\Big(\frac{A_1}{x+2}+\frac{A_2}{(x+1)^2}+\frac{A_3}{x+1}\Big)\,\mathrm{d}x\\
+>   &=\int\frac{A_1(x+1)^2+A_2(x+2)+A_3(x+2)(x+1)}{(x+2)(x+1)^2}
+> \end{align*}$$
 >
 > 得到$A_1(x^2+2x+1)+A_2(x+2)+A_3(x^2+3x+2)$
 >
 > 解方程:
 >
-> $1\times x^2=A_1\,x^2+A_3\,x^2$
+> $$\left\{
+>   \begin{align*}
+>      1\times x^2&=A_1\,x^2+A_3\,x^2\\
+>       0\times x&=2A_1^2\,x+A_2\,x+3A_3\,x\\
+>       1&=A_1+2A_2+2A_3
+>    \end{align*}\right.$$
 >
-> $0\times x=2A_1^2\,x+A_2\,x+3A_3\,x$
+> 得到
 >
-> $1=A_1+2A_2+2A_3$
->
-> 得到$A_1=5;A_2=2;A_3=-4$
+>$$\left\{
+>\begin{align*}
+>    A_1&=5\\
+>      A_2&=2\\
+>      A_3&=-4
+>    \end{align*}\right.$$
 >
 > $$e=\int\Big(\frac{5}{x+2}+\frac{2}{(x+1)^2}-\frac{1}{x+1}\Big)\,\mathrm{d}x$$
 >
-> 然后拆开积,完成
+>然后拆开积,完成
 
 ## 第五章
 
@@ -579,19 +620,25 @@ $$a<b<c\\
 
 性质3:
 
-$$f(x)\equiv1\\
-\int_a^b1\,\mathrm{d}x=b-a\\
-\Rightarrow\int_a^bk\,\mathrm{d}x=k(b-a)$$
+$$\begin{align*}
+    f(x)&\equiv1\\
+    \int_a^b1\,\mathrm{d}x&=b-a\\
+    \Rightarrow\int_a^bk\,\mathrm{d}x&=k(b-a)
+\end{align*}$$
 
 性质4:
 
-$$f(x)\geq0\\
-\int_a^bf(x)\,\mathrm{d}x\geq0$$
+$$\begin{align*}
+    f(x)&\geq0\\
+    \int_a^bf(x)\,\mathrm{d}x&\geq0
+\end{align*}$$
 
 推导1:
 
-$$f(x)\leq g(x)\\
-\int_a^bf(x)\,\mathrm{d}x\leq\int_a^bf(x)\,\mathrm{d}x$$
+$$\begin{align*}
+    f(x)&\leq g(x)\\
+\int_a^bf(x)\,\mathrm{d}x&\leq\int_a^bf(x)\,\mathrm{d}x
+\end{align*}$$
 
 推导2:
 
@@ -628,8 +675,10 @@ p'(x)=f(x)$$
 
 定理5:
 
-$$[\int_{h(x)}^{g(x)}f(x)\,\mathrm{d}x]'=\int_{h(x)}^cf(x)\,\mathrm{d}x+\int_c^{g(x)}f(x)\,\mathrm{d}x\\
-=f(g(x))g'(x)-f(h(x))h'(x)$$
+$$\begin{align*}
+    [\int_{h(x)}^{g(x)}f(x)\,\mathrm{d}x]'&=\int_{h(x)}^cf(x)\,\mathrm{d}x+\int_c^{g(x)}f(x)\,\mathrm{d}x\\
+    &=f(g(x))g'(x)-f(h(x))h'(x)
+\end{align*}$$
 
 牛-莱公式:
 
@@ -649,8 +698,10 @@ $$\int_a^bf(x)\,\mathrm{d}x=\int_\alpha^\beta f(\phi(t))\,\phi'(t)\,\mathrm{d}t$
 
 奇偶定积分:
 
-$$f(x)偶\Rightarrow\int_{-a}^af(x)\,\mathrm{d}x=2\int_0^af(x)\,\mathrm{d}x\\
-f(x)奇\Rightarrow\int_{-a}^af(x)\,\mathrm{d}x=0$$
+$$\begin{align*}
+    f(x)偶\Rightarrow&\int_{-a}^af(x)\,\mathrm{d}x=2\int_0^af(x)\,\mathrm{d}x\\
+    f(x)奇\Rightarrow&\int_{-a}^af(x)\,\mathrm{d}x=0
+\end{align*}$$
 
 分部积分法:
 
@@ -662,13 +713,17 @@ $$\int_a^bu\,\mathrm{d}v=uv|_a^b-\int_a^bv\,\mathrm{d}u$$
 
 #### 5.5.1 无穷限积分
 
-$$\int_a^{+\infty}f(x)\,\mathrm{d}x=\lim\limits_{b\rightarrow\infty}\int_a^bf(x)\,\mathrm{d}x\\
-\int_{-\infty}^bf(x)\,\mathrm{d}x=\lim\limits_{a\rightarrow-\infty}\int_a^bf(x)\,\mathrm{d}x\\
-\int_{-\infty}^{+\infty}f(x)\,\mathrm{d}x=\int_{-\infty}^cf(x)\,\mathrm{d}x+\int_c^{+\infty}f(x)\,\mathrm{d}x=\cdots$$
+$$\begin{align*}
+    \int_a^{+\infty}f(x)\,\mathrm{d}x&=\lim\limits_{b\rightarrow\infty}\int_a^bf(x)\,\mathrm{d}x\\
+    \int_{-\infty}^bf(x)\,\mathrm{d}x&=\lim\limits_{a\rightarrow-\infty}\int_a^bf(x)\,\mathrm{d}x\\
+    \int_{-\infty}^{+\infty}f(x)\,\mathrm{d}x&=\int_{-\infty}^cf(x)\,\mathrm{d}x+\int_c^{+\infty}f(x)\,\mathrm{d}x=\cdots
+\end{align*}$$
 
-> $$\int_1^{+\infty}\frac{1}{x^p}\,\mathrm{d}x\\
-> =\frac{1}{p-1}\cdots p>1\\
-> =发散\cdots p\leq1$$
+> $$\begin{align*}
+>   &\int_1^{+\infty}\frac{1}{x^p}\,\mathrm{d}x\\
+>   =&\frac{1}{p-1}\cdots p>1\\
+>   =&发散\cdots p\leq1
+> \end{align*}$$
 
 性质1:
 
@@ -686,7 +741,7 @@ $$\int_a^{+\infty}f(x)\,\mathrm{d}x与\int_a^{+\infty}g(x)\,\mathrm{d}x都收敛
 定理1:
 
 $$f(x)\geq0\\
-\int_a^{+\infty}f(x)\,\mathrm{d}x收敛\Leftarrow\Rightarrow p(x)=\int_a^{x}f(t)\,\mathrm{d}t有界$$
+\int_a^{+\infty}f(x)\,\mathrm{d}x收敛\Leftrightarrow p(x)=\int_a^{x}f(t)\,\mathrm{d}t有界$$
 
 定理2:
 
@@ -711,13 +766,17 @@ $$\int_a^{+\infty}|f(x)|\,\mathrm{d}x收敛\Rightarrow\int_a^{+\infty}f(x)\,\mat
 
 若函数f(x)在点a的任意一邻域内都无界,那么点a称为函数f(x)的**瑕点**(也称无穷间断点)
 
-$$\int_a^bf(x)\,\mathrm{d}x=\lim\limits_{\epsilon^+\rightarrow0}\int_a^{b-\epsilon^+}f(x)\,\mathrm{d}x\\
-\int_a^bf(x)\,\mathrm{d}x=\lim\limits_{\epsilon^+\rightarrow0}\int_{a+\epsilon^+}^bf(x)\,\mathrm{d}x\\
-\int_a^bf(x)\,\mathrm{d}x=\int_a^cf(x)\,\mathrm{d}x+\int_c^bf(x)\,\mathrm{d}x=\cdots$$
+$$\begin{align*}
+    \int_a^bf(x)\,\mathrm{d}x&=\lim\limits_{\epsilon^+\rightarrow0}\int_a^{b-\epsilon^+}f(x)\,\mathrm{d}x\\
+    \int_a^bf(x)\,\mathrm{d}x&=\lim\limits_{\epsilon^+\rightarrow0}\int_{a+\epsilon^+}^bf(x)\,\mathrm{d}x\\
+    \int_a^bf(x)\,\mathrm{d}x&=\int_a^cf(x)\,\mathrm{d}x+\int_c^bf(x)\,\mathrm{d}x=\cdots
+\end{align*}$$
 
-$$\int_0^1\frac{1}{x^p}\,\mathrm{d}x\\
-=\frac{1}{1-p}\cdots p>1\\
-=发散\cdots p\leq1$$
+$$\begin{align*}
+    &\int_0^1\frac{1}{x^p}\,\mathrm{d}x\\
+    =&\frac{1}{1-p}\cdots p>1\\
+    =&发散\cdots p\leq1
+\end{align*}$$
 
 注:瑕点不能通过换元掩饰掉,可以转移位置
 
@@ -810,13 +869,13 @@ Y型:\iint\limits_Df(x,y)\,\mathrm{d}x\mathrm{d}y=\int_c^d\,\mathrm{d}y\int_{\ph
 
 eg.1
 
-求顶点为(0,0,0),(0,1,0),(1,1,0),(1,1,1)的四面体的体积
-
-> $$\iint\limits_Dxy\,\mathrm{d}x\mathrm{d}y\\
-> X型:\:=\int_0^1\mathrm{d}x\int_x^1xy\,\mathrm{d}y\\
-> =\int_0^1\frac{1}{2}xy^2|_x^1\,\mathrm{d}x\\
-> =\int_0^1\frac{1}{2}x-\frac{1}{2}x^3\,\mathrm{d}x=\frac{1}{8}\\
-> Y型:\:=\int_0^1\mathrm{d}y\int_0^yxy\,\mathrm{d}x$$
+> $$\begin{align*}
+>   &\iint\limits_Dxy\,\mathrm{d}x\mathrm{d}y\\
+>   X型:\:=&\int_0^1\mathrm{d}x\int_x^1xy\,\mathrm{d}y\\
+>   =&\int_0^1\frac{1}{2}xy^2|_x^1\,\mathrm{d}x\\
+>   =&\int_0^1\frac{1}{2}x-\frac{1}{2}x^3\,\mathrm{d}x=\frac{1}{8}\\
+>   Y型:\:=&\int_0^1\mathrm{d}y\int_0^yxy\,\mathrm{d}x
+> \end{align*}$$
 
 特殊1:
 
@@ -904,7 +963,7 @@ $$u_n\geq0$$
 
 定理1:
 
-$\sum u_n为正项级数且收敛\Leftarrow\Rightarrow\{S_n\}有界$
+$\sum u_n为正项级数且收敛\Leftrightarrow\{S_n\}有界$
 
 定理2:
 
@@ -1083,14 +1142,165 @@ $S_n'(x)=\sum\limits_{n=1}^\infty (a_nx^n)'=\sum a_nnx^{n-1}\qquad收敛半径�
 
 $S_n(x)=\sum\limits_{n=1}^\infty a_nx^n$
 
-$\int_0^xS_n(x)\mathrm{d}x=\sum\limits_{n=1}^\infty\int_0^xa_nx^n\mathrm{d}x=\sum\limits_{n=1}^\infty a_n\frac{x^{n+1}}{n+1}\qquad收敛半径相同\\
+$\int_0^xS_n(x)\,\mathrm{d}x=\sum\limits_{n=1}^\infty\int_0^xa_nx^n\,\mathrm{d}x=\sum\limits_{n=1}^\infty a_n\frac{x^{n+1}}{n+1}\qquad收敛半径相同\\
 端点处是否收敛需重新判断$
 
 ## 第八章
 
 ### 8.1 微分方程的概念
 
+eg.1
+
+> 曲线过(1,3),切线斜率:2x,求方程
+>
+> $$\begin{align*}
+>   y&=x^2+c\\
+>   3&=1+c\\
+>   c&=2\\
+>   y&=x^2+2\\
+>   y&=2x
+> \end{align*}$$
+
+微分方程: 一般的，凡事表示未知函数、未知函数的导数和自变量之间的关系的方程
+
+微分方程的阶: 微分方程中所出现的未知函数的最高阶导数的阶数也叫作
+
+一元函数: 常微分方程
+
+多元函数: 偏微分方程
+
+通解: 微分方程的解中含有任意常数，且任意常数的个数与微分方程的阶数相同，这样的解叫作微分方程的通解
+
+特解: 通解确定了通解中任意常数的值之后，便叫作微分方程的特解
+
 ### 8.2 一阶微分方程
+
+方法1:分离变量
+
+转化为:
+
+$$M(x)\,\mathrm{d}x=N(y)\,\mathrm{d}y\\
+\int M(x)\,\mathrm{d}x=\int N(y)\,\mathrm{d}y+c$$
+
+eg.1
+
+> $$\begin{align*}
+>   \frac{\mathrm{d}y}{\mathrm{d}x}&=2xy\\
+>   \frac{1}{y}\,\mathrm{d}y&=2x\,\mathrm{d}x\\
+>   \int\frac{1}{y}\,\mathrm{d}y&=\int2x\,\mathrm{d}x+c\\
+>   \ln|y|&=x^2+c\\
+>   |y|&=e^ce^{x^2}\\
+>   y&=ce^{x^2}
+> \end{align*}$$
+
+微分方程可不加绝对值,其他要加
+
+---
+
+方法2:齐次
+
+$$\frac{\mathrm{d}y}{\mathrm{d}x}=f(\frac{y}{x})$$
+
+eg.2
+
+> $$\frac{\mathrm{d}y}{\mathrm{d}x}=2\sqrt{\frac{y}{x}}+\frac{y}{x}\\
+> 令u=\frac{y}{x},\quad y=xu\Rightarrow \frac{\mathrm{d}y}{\mathrm{d}x}=u+x\frac{\mathrm{d}u}{\mathrm{d}x}(将此式与上式联立)$$
+>
+> ---
+>
+> 解法:
+>
+> $$\begin{align*}
+>   u+x\frac{\mathrm{d}u}{\mathrm{d}x}&=f(u)\\
+>   \frac{\mathrm{d}u}{f(u)-u}&=\frac{\mathrm{d}x}{x}\\
+>   \int\frac{\mathrm{d}u}{f(u)-u}&=\int\frac{\mathrm{d}x}{x}+c
+> \end{align*}$$
+>
+> ---
+>
+> 此题解法:
+>
+> $$\begin{align*}
+>   \cancel{u}+x\frac{\mathrm{d}u}{\mathrm{d}x}&=2\sqrt{u}+\cancel{u}\\
+>   \frac{\mathrm{d}u}{2\sqrt{u}}&=\frac{\mathrm{d}x}{x}\\
+>   \int\frac{\mathrm{d}u}{2\sqrt{u}}&=\int\frac{\mathrm{d}x}{x}+c\\
+>   \sqrt{u}&=\ln x+c\\
+>   \frac{y}{x}&=(\ln x+c)^2\\
+>   y&=x(\ln x+c)^2
+> \end{align*}$$
+
+---
+
+方法3:一阶线性
+
+ 一阶线性齐次微分方程:
+
+$$\begin{align*}
+    y'+p(x)y&=0\\
+    \frac{\mathrm{d}y}{\mathrm{d}x}&=-p(x)y\\
+    \frac{\mathrm{d}y}{y}&=-p(x)\,\mathrm{d}x\\
+    \int\frac{\mathrm{d}y}{y}&=\int-p(x)\,\mathrm{d}x\\
+    \ln y&=-\int p(x)\,\mathrm{d}x+c\\
+    y&=e^{-\int p(x)\,\mathrm{d}x}e^c\\
+    y&=ce^{-\int p(x)\,\mathrm{d}x}\\
+\end{align*}$$
+
+一阶线性非齐次微分方程:
+
+$$\begin{align}
+    y'+p(x)y&=q(x)\\
+    \frac{1}{y}\frac{\mathrm{d}y}{\mathrm{d}x}+p(x)&=\frac{q(x)}{y}\\
+    \frac{1}{y}\,\mathrm{d}y&=\frac{q(x)}{y}\,\mathrm{d}x-p(x)\,\mathrm{d}x\\
+    \int\frac{1}{y}\,\mathrm{d}y&=\int\frac{q(x)}{y}\,\mathrm{d}x-\int p(x)\,\mathrm{d}x+c\\
+    \ln y&=\int\frac{q(x)}{y}\,\mathrm{d}x-\int p(x)\,\mathrm{d}x+c\\
+    y&=\underbrace{e^ce^{\int\frac{q(x)}{y}\,\mathrm{d}x}}_{设其为c(x)}e^{-\int p(x)\,\mathrm{d}x}\\
+    y&=c(x)e^{-\int p(x)\,\mathrm{d}x}\\
+    y'&=c'(x)e^{-\int p(x)\,\mathrm{d}x}-c(x)e^{-\int p(x)\,\mathrm{d}x}p(x)\\
+\end{align}$$
+
+联立(8)(1)(7)得到:
+
+$$\begin{align}
+    c'(x)e^{-\int p(x)\,\mathrm{d}x}\cancel{-c(x)p(x)e^{-\int p(x)\,\mathrm{d}x}}&\cancel{+c(x)p(x)e^{-\int p(x)\,\mathrm{d}x}}=q(x)\\
+    c'(x)&=q(x)e^{\int p(x)\,\mathrm{d}x}\\
+    c(x)&=\int q(x)e^{\int p(x)\,\mathrm{d}x}\,\mathrm{d}x+c
+\end{align}$$
+
+联立(11)(7)得到:
+
+$$y=e^{-\int p(x)\,\mathrm{d}x}\Bigg(\int q(x)e^{\int p(x)\,\mathrm{d}x}\,\mathrm{d}x+c)\Bigg)$$
+
+eg.3
+
+$$\begin{align*}
+    y\,\mathrm{d}x+(x-y^3)\,\mathrm{d}y&=0\\
+    (x-y^3)\,\mathrm{d}y&=-y\,\mathrm{d}x\\
+    \frac{\mathrm{d}y}{\mathrm{d}x}&=-\frac{y}{x-y^3}
+\end{align*}$$
+
+把x作为y的函数
+
+$$\begin{align*}
+    \frac{\mathrm{d}x}{\mathrm{d}y}&=\frac{1}{y}x-y^2\\
+    \frac{\mathrm{d}x}{\mathrm{d}y}\underbrace{+\frac{1}{y}}_{p(y)}x&=\underbrace{y^2}_{q(y)}
+\end{align*}$$
+
+然后用上面一阶非齐次线性方程求解方法完成
+
+---
+
+方法4:伯努利方程
+
+$$\begin{align*}
+    y'+p(x)y&=q(x)y^\alpha\qquad(\alpha\neq 0,1)\\
+    y^{-\alpha}\frac{\mathrm{d}y}{\mathrm{d}x}+p(x)y^{1-\alpha}&=q(x)\\
+    设z&=y^{1-\alpha}\\
+    \frac{1}{1-\alpha}\frac{\mathrm{d}y^{1-\alpha}}{\mathrm{d}y}+p(x)y^{1-\alpha}&=q(x)\\
+    \frac{1}{1-\alpha}\frac{\mathrm{d}z}{\mathrm{d}y}+p(x)z&=q(x)\\
+    \frac{\mathrm{d}z}{\mathrm{d}y}+\underbrace{(1-\alpha)p(x)}_{p(x)}z&=\underbrace{(1-\alpha)q(x)}_{q(x)}
+\end{align*}$$
+
+然后用上面一阶非齐次线性方程求解方法算出z,再算出y
 
 ### 8.3 高阶微分方程
 
