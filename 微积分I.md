@@ -289,7 +289,7 @@ eg.1
 
 > $$\begin{align*}
 >   e^x&\approx1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}\\
->   sinx&\approx x-\frac{1}{3!}x^3+\frac{1}{5!}x^5+\cdots
+>   sin\,x&\approx x-\frac{1}{3!}x^3+\frac{1}{5!}x^5+\cdots
 > \end{align*}$$
 
 ### 3.2 洛必达法则
@@ -359,9 +359,9 @@ $$\begin{align*}
 eg.1
 
 > $$\begin{align*}
->   &\quad\int 2x\,cosx^2\,\mathrm{d}x\\
->   =&\int cosx^2\,\mathrm{d}x^2\\
->   =&sinx^2+c
+>   &\quad\int 2x\,cos\,x^2\,\mathrm{d}x\\
+>   =&\int cos\,x^2\,\mathrm{d}x^2\\
+>   =&sin\,x^2+c
 >   \end{align*}$$
 
 <a id="4.2.1.eg.2"></a>
@@ -410,8 +410,8 @@ $$\begin{align*}
 
 (1)谁放d后面
 
-> $$\int x\,sinx\,\mathrm{d}x=-\int x\,\mathrm{d}cosx\\
-> =-(x\,cosx-\int cosx\,\mathrm{d}x)=-x\,cosx+sinx+c$$
+> $$\int x\,sin\,x\,\mathrm{d}x=-\int x\,\mathrm{d}cos\,x\\
+> =-(x\,cos\,x-\int cos\,x\,\mathrm{d}x)=-x\,cos\,x+sin\,x+c$$
 
 (2)能积出来,能让积分更简单
 
@@ -419,7 +419,7 @@ $$\begin{align*}
 
 (3)优先:
 
-$$e^x>sinx,\:cosx>x,\:x^n>\ln x,\:arctanx$$
+$$e^x>sin\,x,\:cos\,x>x,\:x^n>\ln x,\:arctan\,x$$
 
 ### 4.3 有理函数的积分
 
@@ -1179,8 +1179,10 @@ eg.1
 
 转化为:
 
-$$M(x)\,\mathrm{d}x=N(y)\,\mathrm{d}y\\
-\int M(x)\,\mathrm{d}x=\int N(y)\,\mathrm{d}y+c$$
+$$\begin{align*}
+    M(x)\,\mathrm{d}x&=N(y)\,\mathrm{d}y\\
+    \int M(x)\,\mathrm{d}x&=\int N(y)\,\mathrm{d}y+c
+\end{align*}$$
 
 eg.1
 
@@ -1268,7 +1270,7 @@ $$\begin{align}
 
 联立(11)(7)得到:
 
-$$y=e^{-\int p(x)\,\mathrm{d}x}\Bigg(\int q(x)e^{\int p(x)\,\mathrm{d}x}\,\mathrm{d}x+c)\Bigg)$$
+$$y=e^{-\int p(x)\,\mathrm{d}x}\Big(\int q(x)e^{\int p(x)\,\mathrm{d}x}\,\mathrm{d}x+c)\Big)$$
 
 eg.3
 
@@ -1285,7 +1287,7 @@ $$\begin{align*}
     \frac{\mathrm{d}x}{\mathrm{d}y}\underbrace{+\frac{1}{y}}_{p(y)}x&=\underbrace{y^2}_{q(y)}
 \end{align*}$$
 
-然后用上面一阶非齐次线性方程求解方法完成
+然后用上方一阶非齐次线性方程求解方法完成
 
 ---
 
@@ -1300,8 +1302,129 @@ $$\begin{align*}
     \frac{\mathrm{d}z}{\mathrm{d}y}+\underbrace{(1-\alpha)p(x)}_{p(x)}z&=\underbrace{(1-\alpha)q(x)}_{q(x)}
 \end{align*}$$
 
-然后用上面一阶非齐次线性方程求解方法算出z,再算出y
+然后用上方一阶非齐次线性方程求解方法求出z,再求出y
 
 ### 8.3 高阶微分方程
+
+可降阶:
+
+$y^{(n)}=f(x)$
+
+$两边不停求积分$
+
+eg.1
+
+> $$\begin{align*}
+>   y'''&=sin\,x+e^{2x}\\
+>   y''&=-cos\,x+\frac{1}{2}e^{2x}+c_1\\
+>   y'&=-sin\,x+\frac{1}{4}e^{2x}+c_1x+c_2\\
+>   y&=cos\,x+\frac{1}{8}e^{2x}+\frac{c_1}{2}x^2+c_2x+c_3
+> \end{align*}$$
+
+---
+
+$y^{(n)}=f(x,y^{(n-1)})$
+
+$令\quad u=y^{(n-1)}\\
+转化为\quad u'=f(x,u)\\
+用上方一阶非齐次线性方程求解方法求出u\rightarrow y^{(n-1)}\\
+接着两边不停求积分$
+
+eg.2
+
+> $$\begin{align*}
+>   y'''&=\frac{1}{x}y''+2x^2\\
+>   令u=&y''\rightarrow u'=y'''\\
+>   u'\underbrace{-\frac{1}{x}}_{p(x)}u&=\underbrace{2x^2}_{q(x)}\\
+>   u&=e^{\int\frac{1}{x}\,\mathrm{d}x}\Big(\int2x^2e^{\int-\frac{1}{x}\,\mathrm{d}x}\mathrm{d}x+c\Big)\\
+>   u&=x^3+c_1x\\
+>   y''&=x^3+c_1x\\
+>   y'&=\frac{1}{4}x^4+\frac{c_1}{2}x^2+c_2\\
+>   y&=\frac{1}{20}x^5+\frac{c_1}{6}x^3+c_2x+c_3
+> \end{align*}$$
+
+---
+
+$y''=f(y,y')$
+
+$令\quad u=y'\rightarrow y''=\frac{\mathrm{d}u}{\mathrm{d}x}=\frac{\mathrm{d}u}{\mathrm{d}y}\frac{\mathrm{d}y}{\mathrm{d}x}=u\frac{\mathrm{d}u}{\mathrm{d}y}\\转化为:$
+
+$$u\frac{\mathrm{d}u}{\mathrm{d}y}=f(y,u)$$
+
+解出u, 带入y'再算
+
+eg.3
+
+> $$\begin{align*}
+>   yy''&=(y')^2\\
+>   令u&=y'\\
+>   yu\frac{\mathrm{d}u}{\mathrm{d}y}&=u^2\\
+>   假设u\neq0:\\
+>   y\frac{\mathrm{d}u}{\mathrm{d}y}&=u\\
+>   \ln u&=\ln y+c\\
+>   u&=c_1y\\
+>   y'&=c_1y\\
+>   \frac{\mathrm{d}y}{\mathrm{d}x}&=c_1y\\
+>   \frac{\mathrm{d}y}{y}&=c_1\,\mathrm{d}x\\
+>   \ln y&=c_1x+c_2\\
+>   y&=c_2e^{c_1x}\\
+>   假设u=0:\\
+>   c_1&=0
+> \end{align*}$$
+
+---
+
+不可降阶:
+
+二阶常系数线性非齐次微分方程: $y''+py'+qy=f(x)$
+
+二阶常系数线性齐次微分方程: $y''+py'+qy=0$
+
+特征方程: $r^2+pr+q=0$
+
+关于$\Delta=p^2-4q$:
+
+$\Delta>0:$
+
+$$r_{1,2}=\frac{1}{2}(-p\pm\sqrt{p^2-4q})\\
+y=c_1e^{r_1x}+c_2e^{r_2x}$$
+
+---
+
+$\Delta=0:$
+
+$$r_{1,2}=-\frac{p}{2}\\
+y=(c_1+c_2x)e^{r_1x}$$
+
+---
+
+$\Delta<0:$
+
+$$r_{1,2}=-\frac{p}{2}\pm\frac{\imath}{2}\sqrt{4q-p^2}\\
+y=e^{\alpha x}(c_1cos\,\beta x+c_2sin\,\beta x)$$
+
+eg.4
+
+> $$\begin{align*}
+>   y''-5y'+6y&=0\\
+>   特征方程:\:r^2+5r+6&=0\\
+>   \left\{
+>   \begin{align*}
+>       r_1&=2\\
+>       r_2&=3
+>   \end{align*}
+>   \right.\\
+>   y=c_1e^{2x}&c_2e^{3x}
+> \end{align*}$$
+
+eg.5
+
+$$\begin{align*}
+    y'&=\frac{y''+y}{2}\\
+    特征方程:\:r&=\frac{r^2+1}{2}\\
+    r^2-2r+1&=0\\
+    r_1=&r_2=1\\
+    y&=c_1e^x+c_2xe^x
+\end{align*}$$
 
 ### 8.4 差分方程
