@@ -1274,20 +1274,20 @@ $$y=e^{-\int p(x)\,\mathrm{d}x}\Big(\int q(x)e^{\int p(x)\,\mathrm{d}x}\,\mathrm
 
 eg.3
 
-$$\begin{align*}
-    y\,\mathrm{d}x+(x-y^3)\,\mathrm{d}y&=0\\
-    (x-y^3)\,\mathrm{d}y&=-y\,\mathrm{d}x\\
-    \frac{\mathrm{d}y}{\mathrm{d}x}&=-\frac{y}{x-y^3}
-\end{align*}$$
-
-把x作为y的函数
-
-$$\begin{align*}
-    \frac{\mathrm{d}x}{\mathrm{d}y}&=\frac{1}{y}x-y^2\\
-    \frac{\mathrm{d}x}{\mathrm{d}y}\underbrace{+\frac{1}{y}}_{p(y)}x&=\underbrace{y^2}_{q(y)}
-\end{align*}$$
-
-然后用上方一阶非齐次线性方程求解方法完成
+> $$\begin{align*}
+>   y\,\mathrm{d}x+(x-y^3)\,\mathrm{d}y&=0\\
+>   (x-y^3)\,\mathrm{d}y&=-y\,\mathrm{d}x\\
+>   \frac{\mathrm{d}y}{\mathrm{d}x}&=-\frac{y}{x-y^3}
+> \end{align*}$$
+>
+> 把x作为y的函数
+>
+>$$\begin{align*}
+>   \frac{\mathrm{d}x}{\mathrm{d}y}&=\frac{1}{y}x-y^2\\
+>   \frac{\mathrm{d}x}{\mathrm{d}y}\underbrace{+\frac{1}{y}}_{p(y)}x&=\underbrace{y^2}_{q(y)}
+> \end{align*}$$
+>
+> 然后用上方一阶非齐次线性方程求解方法完成
 
 ---
 
@@ -1376,13 +1376,11 @@ eg.3
 
 不可降阶:
 
-二阶常系数线性非齐次微分方程: $y''+py'+qy=f(x)$
-
 二阶常系数线性齐次微分方程: $y''+py'+qy=0$
 
 特征方程: $r^2+pr+q=0$
 
-关于$\Delta=p^2-4q$:
+关于$\Delta=p^2-4q\:$:
 
 $\Delta>0:$
 
@@ -1408,13 +1406,9 @@ eg.4
 > $$\begin{align*}
 >   y''-5y'+6y&=0\\
 >   特征方程:\:r^2+5r+6&=0\\
->   \left\{
->   \begin{align*}
 >       r_1&=2\\
->       r_2&=3
->   \end{align*}
->   \right.\\
->   y=c_1e^{2x}&c_2e^{3x}
+>       r_2&=3\\
+>   y&=c_1e^{2x}+c_2e^{3x}
 > \end{align*}$$
 
 eg.5
@@ -1426,6 +1420,12 @@ eg.5
 >   r_1=&r_2=1\\
 >   y&=c_1e^x+c_2xe^x
 > \end{align*}$$
+
+二阶常系数线性非齐次微分方程: $y''+py'+qy=f(x)$
+
+![](二阶常系数线性非齐次微分方程求解方法.png)
+
+![](二阶常系数线性非齐次微分方程例题.png)
 
 ### 8.4 差分方程
 
@@ -1460,12 +1460,8 @@ $$\begin{align*}
 
 $$\begin{align*}
     y_{t+1}+ay_t&=f(t)\\
-    \left\{
-    \begin{align*}
-        \overline{y_{t+1}}+a\overline{y_t}&=0\\
-        y_{t+1}^*+ay_t^*&=f(t)\\  
-    \end{align*}
-    \right.\\
+    \overline{y_{t+1}}+a\overline{y_t}&=0\\
+    y_{t+1}^*+ay_t^*&=f(t)\\  
     \overline{y_{t+1}}+y_{t+1}^*+a(\overline{y_t}+y_t^*)&=f(t)\\
     通解:\overline{y_t}+&y_t^*
 \end{align*}$$
