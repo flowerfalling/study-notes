@@ -36,6 +36,10 @@ $A\times B=\{(a, b)|a\in A, b\in B\}\quad(有序对(a,b))$
 
 ### 1.2 函数
 
+有界 $|f(x)|\leq M$
+
+无界 $\forall M\exist x_0, f(x_0)>M$
+
 ### 1.4 数列极限
 
 定义:
