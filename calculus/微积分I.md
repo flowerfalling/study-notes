@@ -6,9 +6,9 @@
 
 一些确定的对象或事物
 
-表示方法:列举法,描述法
+表示方法: 列举法, 描述法
 
-注:集合的集合也是一个集合
+注: 集合的集合也是一个集合
 
 $A\subset B\quad B\subset A\Rightarrow A=B$
 
@@ -28,11 +28,11 @@ $A\times B=\{(a, b)|a\in A, b\in B\}\quad(有序对(a,b))$
 
 区间:
 
-开区间:(a, b),闭区间:[a, b],半开半闭:[a, b)/(a, b]
+开区间: (a, b), 闭区间:[a, b], 半开半闭:[a, b)/(a, b]
 
-邻域:任何以a为中心,$\delta$为半径的开区间:$U(a,\delta)=\{x|a-\delta<x<a+\delta\}$
+邻域: 任何以a为中心, $\delta$为半径的开区间: $U(a,\delta)=\{x|a-\delta<x<a+\delta\}$
 
-去心邻域:把中心点a去掉$U(\hat{a},\delta)=\{x|0<|x-a|<\delta\}$
+去心邻域: 把中心点a去掉: $U(\hat{a},\delta)=\{x|0<|x-a|<\delta\}$
 
 ### 1.2 函数
 
@@ -44,8 +44,8 @@ $A\times B=\{(a, b)|a\in A, b\in B\}\quad(有序对(a,b))$
 
 定义:
 
-$\{x_n\}若存在a,任给\epsilon>0,存在N,n>N时,|x_n-a|<\epsilon,\{x_n\}以a为极限(\{x_n\}收敛与a)\\
-记作:\lim\limits_{n\rightarrow\infty}x_n=a\\$
+$\{x_n\}若存在a, 任给\epsilon>0, 存在N,n>N时, |x_n-a|<\epsilon, \{x_n\}以a为极限(\{x_n\}收敛与a)\\
+记作: \lim\limits_{n\rightarrow\infty}x_n=a\\$
 
 性质1:
 
@@ -61,21 +61,66 @@ $\lim\limits_{n\rightarrow\infty}x_n=a\quad a>0(a<0)\quad存在N\quad 使n>N时\
 
 性质4:
 
-$\{x_n\}$收敛于a,任何子数列$\{x_{k_n}\}$收敛于a
+$\{x_n\}$收敛于a, 任何子数列$\{x_{k_n}\}$收敛于a
 
 推论1:
 
-找到一个子数列不收敛,则原数列发散
+找到一个子数列不收敛, 则原数列发散
 
 推论2:
 
-找到两个子数列,虽都收敛,但极限不同,原数列发散
+找到两个子数列, 虽都收敛, 但极限不同, 原数列发散
 
 推论3:
 
-原数列收敛$\Leftrightarrow$奇数项,偶数项构成的子数列收敛,且极限相同
+原数列收敛$\Leftrightarrow$奇数项, 偶数项构成的子数列收敛, 且极限相同
 
 ### 1.5 函数极限
+
+1. $x\rightarrow+\infty, f(x)\rightarrow a$
+
+   $\forall \epsilon > 0, \exist X$使$x>X$时, $|f(x)-a|<\epsilon$
+
+   则a是$x\rightarrow+\infty$时f(x)的极限
+
+   记作
+
+   $$\lim\limits_{x\rightarrow+\infty} f(x)=a$$
+2. $x\rightarrow x_0, f(x)\rightarrow a$
+
+   f(x)在$x_0$的去心邻域内有定义 **(x可以取不到$x_0$)**
+
+   $\forall \epsilon > 0, \exist \delta>0$使$0<|x-x_0|<\delta$时, $|f(x)-a|<\epsilon$
+
+   则a是$x\rightarrow x_0$时f(x)的极限
+
+   记作
+
+   $$\lim\limits_{x\rightarrow x_0} f(x)=a$$
+3. 左极限, 右极限
+
+    左右极限都存在并且相等，是极限存在的充要条件
+
+性质1:
+
+极限存在则唯一
+
+性质2:
+
+局部有界性: 如果极限存在, 则一定存在d($x_0$的去心邻域)使f(x)有界
+
+性质3:
+
+保号性: $\lim f(x)=a$, a>0, 则一定存在d, 使在d中f(x)>0
+
+性质4:
+
+函数有极限存在, 充要条件是当$x\rightarrow x_0$, 取任意数列$\{x_n\}$, 当$\lim\limits_{x\rightarrow+\infty}x_n\rightarrow x_0$时, $\lim\limits_{n\rightarrow+\infty}f(x_n)=a$
+
+逆否:
+
+1. 找到一个数列极限不存在，则函数极限不存在
+2. 两个数列极限不相等，则函数极限不存在
 
 ### 1.6 无穷小和无穷大
 
